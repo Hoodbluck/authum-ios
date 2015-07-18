@@ -45,9 +45,25 @@ class RegisterViewController: UIViewController {
 
         let user = User(userId: nil, firstName: firstName, lastName: lastName, email: email, password: password, deviceToken: nil)
         let authumService = AuthumService()
-        authumService.registerUser(user, completion: nil)
+        authumService.registerUser(user) { (response, error) in
+            guard let response = response else {
+                print("Error registering user: \(error?.localizedDescription)")
+                return
+            }
+            switch response.code {
+            case .Success:
+                let vc = self.storyboard!.instantiateViewControllerWithIdentifier("HomeViewController")
+                self.presentViewController(vc, animated: true, completion: nil)
+            case .Failure:
+                self.showRegistrationFailureAlert(response)
+            case .Warning:
+                print("Error registering user: \(response.status)")
+            }
+        }
         confirmPasswordTextField.resignFirstResponder()
     }
+
+    // MARK: Alerts
 
     func require(field: String) {
         let title = "\(field) Required"
@@ -65,6 +81,16 @@ class RegisterViewController: UIViewController {
         let OKAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
         alertController.addAction(OKAction)
         presentViewController(alertController, animated: true, completion: nil)
+    }
+
+    func showRegistrationFailureAlert(response: AuthumResponse) {
+        let title = "Error Code \(response.code.rawValue)"
+        let message = response.status
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        let OKAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alertController.addAction(OKAction)
+        presentViewController(alertController, animated: true, completion: nil)
+
     }
 
 }

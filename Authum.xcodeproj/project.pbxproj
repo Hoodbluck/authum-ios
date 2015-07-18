@@ -26,6 +26,8 @@
 		B55E9B561B5ACCAE00D4326A /* AuthumResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E9B551B5ACCAE00D4326A /* AuthumResponse.swift */; };
 		B55E9B581B5ACF5D00D4326A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E9B571B5ACF5D00D4326A /* LogInViewController.swift */; };
 		B5D9C5E71B5AEC6C0000788F /* Parameterizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D9C5E61B5AEC6C0000788F /* Parameterizable.swift */; };
+		B5D9C5EA1B5B075F0000788F /* AuthumResponseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D9C5E91B5B075F0000788F /* AuthumResponseCode.swift */; };
+		B5D9C5EC1B5B0E260000788F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D9C5EB1B5B0E260000788F /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		B55E9B551B5ACCAE00D4326A /* AuthumResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthumResponse.swift; sourceTree = "<group>"; };
 		B55E9B571B5ACF5D00D4326A /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		B5D9C5E61B5AEC6C0000788F /* Parameterizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameterizable.swift; sourceTree = "<group>"; };
+		B5D9C5E91B5B075F0000788F /* AuthumResponseCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthumResponseCode.swift; sourceTree = "<group>"; };
+		B5D9C5EB1B5B0E260000788F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 				B55E9B571B5ACF5D00D4326A /* LogInViewController.swift */,
 				B53ECE261B5ABFEB002A49AF /* RegisterViewController.swift */,
 				B53ECE281B5ABFEB002A49AF /* Main.storyboard */,
+				B5D9C5EB1B5B0E260000788F /* HomeViewController.swift */,
 				B53ECE2B1B5ABFEB002A49AF /* Assets.xcassets */,
 				B53ECE2D1B5ABFEB002A49AF /* LaunchScreen.storyboard */,
 				B53ECE301B5ABFEB002A49AF /* Info.plist */,
@@ -209,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				B55E9B551B5ACCAE00D4326A /* AuthumResponse.swift */,
+				B5D9C5E91B5B075F0000788F /* AuthumResponseCode.swift */,
 				B55E9B531B5ACCA500D4326A /* User.swift */,
 			);
 			name = Models;
@@ -413,9 +419,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B53ECE271B5ABFEB002A49AF /* RegisterViewController.swift in Sources */,
+				B5D9C5EA1B5B075F0000788F /* AuthumResponseCode.swift in Sources */,
 				B53ECE251B5ABFEB002A49AF /* AppDelegate.swift in Sources */,
 				B5D9C5E71B5AEC6C0000788F /* Parameterizable.swift in Sources */,
 				B55E9B561B5ACCAE00D4326A /* AuthumResponse.swift in Sources */,
+				B5D9C5EC1B5B0E260000788F /* HomeViewController.swift in Sources */,
 				B55E9B581B5ACF5D00D4326A /* LogInViewController.swift in Sources */,
 				4B7A96E51B5ACF3C006B519E /* AuthumService.swift in Sources */,
 				B55E9B541B5ACCA500D4326A /* User.swift in Sources */,
