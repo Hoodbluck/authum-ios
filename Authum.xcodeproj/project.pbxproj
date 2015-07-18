@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		779E027BA6F42C8249BCCA5E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715E62077C6D40D51D73C6A4 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B53ECE251B5ABFEB002A49AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53ECE241B5ABFEB002A49AF /* AppDelegate.swift */; };
 		B53ECE271B5ABFEB002A49AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53ECE261B5ABFEB002A49AF /* ViewController.swift */; };
 		B53ECE2A1B5ABFEB002A49AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53ECE281B5ABFEB002A49AF /* Main.storyboard */; };
@@ -65,6 +66,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		715E62077C6D40D51D73C6A4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7871E686F94AD2A6371A4385 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A331796ABBF08778DA458653 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B53ECE211B5ABFEB002A49AF /* Authum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53ECE241B5ABFEB002A49AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53ECE261B5ABFEB002A49AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779E027BA6F42C8249BCCA5E /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A181EBE0BF19285EFE90E548 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A331796ABBF08778DA458653 /* Pods.debug.xcconfig */,
+				7871E686F94AD2A6371A4385 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B53ECE181B5ABFEB002A49AF = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +124,8 @@
 				B53ECE371B5ABFEB002A49AF /* Authum WatchKit App */,
 				B53ECE461B5ABFEB002A49AF /* Authum WatchKit Extension */,
 				B53ECE221B5ABFEB002A49AF /* Products */,
+				A181EBE0BF19285EFE90E548 /* Pods */,
+				BED01CDBC667715EA16D9430 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +183,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BED01CDBC667715EA16D9430 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				715E62077C6D40D51D73C6A4 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,10 +198,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B53ECE5C1B5ABFEB002A49AF /* Build configuration list for PBXNativeTarget "Authum" */;
 			buildPhases = (
+				303CC712B90D0FCF9D1B33DF /* Check Pods Manifest.lock */,
 				B53ECE1D1B5ABFEB002A49AF /* Sources */,
 				B53ECE1E1B5ABFEB002A49AF /* Frameworks */,
 				B53ECE1F1B5ABFEB002A49AF /* Resources */,
 				B53ECE5B1B5ABFEB002A49AF /* Embed Watch Content */,
+				DCEAA64CA11B78065FD33667 /* Embed Pods Frameworks */,
+				B1C5D66782907998C5C9C86A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,6 +319,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		303CC712B90D0FCF9D1B33DF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1C5D66782907998C5C9C86A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCEAA64CA11B78065FD33667 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B53ECE1D1B5ABFEB002A49AF /* Sources */ = {
@@ -499,6 +574,7 @@
 		};
 		B53ECE5D1B5ABFEB002A49AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A331796ABBF08778DA458653 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Authum/Info.plist;
@@ -511,6 +587,7 @@
 		};
 		B53ECE5E1B5ABFEB002A49AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7871E686F94AD2A6371A4385 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Authum/Info.plist;
@@ -540,6 +617,7 @@
 				B53ECE561B5ABFEB002A49AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B53ECE581B5ABFEB002A49AF /* Build configuration list for PBXNativeTarget "Authum WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +626,7 @@
 				B53ECE5A1B5ABFEB002A49AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B53ECE5C1B5ABFEB002A49AF /* Build configuration list for PBXNativeTarget "Authum" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +635,7 @@
 				B53ECE5E1B5ABFEB002A49AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
