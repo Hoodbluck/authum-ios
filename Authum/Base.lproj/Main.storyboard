@@ -31,7 +31,7 @@
                                     <constraint firstAttribute="width" constant="151" id="mc7-eC-lLl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Vz-Zk-QDL">
                                 <rect key="frame" x="225" y="242" width="151" height="30"/>
@@ -80,8 +80,53 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewQ-Xw-JmT">
+                                <rect key="frame" x="225" y="204" width="151" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="6RR-ix-BGG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1zt-p9-pex">
+                                <rect key="frame" x="225.5" y="280" width="151" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IG1-W4-AhA">
+                                <rect key="frame" x="272" y="318" width="57" height="30"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="logInButtonPressed:" destination="4HP-Nv-uwK" eventType="touchUpInside" id="nVM-lF-oQQ"/>
+                                    <action selector="registerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMi-vI-qZZ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KLU-xD-2Jc">
+                                <rect key="frame" x="225" y="242" width="151" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KLU-xD-2Jc" firstAttribute="top" secondItem="ewQ-Xw-JmT" secondAttribute="bottom" constant="8" id="4xg-ZD-u4t"/>
+                            <constraint firstItem="ewQ-Xw-JmT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ImK-YD-oxj"/>
+                            <constraint firstItem="KLU-xD-2Jc" firstAttribute="width" secondItem="ewQ-Xw-JmT" secondAttribute="width" id="PN2-bh-yRr"/>
+                            <constraint firstItem="IG1-W4-AhA" firstAttribute="top" secondItem="1zt-p9-pex" secondAttribute="bottom" constant="8" id="Rqr-I4-Dzo"/>
+                            <constraint firstItem="1zt-p9-pex" firstAttribute="width" secondItem="KLU-xD-2Jc" secondAttribute="width" id="aU8-eL-OC6"/>
+                            <constraint firstItem="ewQ-Xw-JmT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="aqP-dI-YyE"/>
+                            <constraint firstItem="1zt-p9-pex" firstAttribute="top" secondItem="KLU-xD-2Jc" secondAttribute="bottom" constant="8" id="j0K-DN-tCq"/>
+                            <constraint firstItem="1zt-p9-pex" firstAttribute="centerX" secondItem="KLU-xD-2Jc" secondAttribute="centerX" id="nop-nt-gwO"/>
+                            <constraint firstItem="KLU-xD-2Jc" firstAttribute="centerX" secondItem="ewQ-Xw-JmT" secondAttribute="centerX" id="s1I-Lg-mse"/>
+                            <constraint firstItem="IG1-W4-AhA" firstAttribute="centerX" secondItem="1zt-p9-pex" secondAttribute="centerX" id="v8K-hQ-1WZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="1zt-p9-pex" id="N3G-e5-zBA"/>
+                        <outlet property="passwordTextField" destination="KLU-xD-2Jc" id="cOI-R7-21k"/>
+                        <outlet property="usernameTextField" destination="ewQ-Xw-JmT" id="HWh-ur-iFV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

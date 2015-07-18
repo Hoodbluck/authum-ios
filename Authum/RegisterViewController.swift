@@ -10,4 +10,11 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
+
+    @IBAction func registerButtonTapped(sender: UIButton) {
+        confirmPasswordTextField.resignFirstResponder()
+    }
 }
