@@ -1,5 +1,5 @@
 //
-//  AuthumResponse.swift
+//  Response.swift
 //  Authum
 //
 //  Created by Andrew Clissold on 7/18/15.
@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct AuthumResponse {
+struct Response {
 
-    let code: AuthumResponseCode /// Status code of the action, -1 = failure, 0 = success, 1 = warning.
+    let code: ResponseCode /// Status code of the action, -1 = failure, 0 = success, 1 = warning.
     let status: String /// Response status, this should be specified on the API process definition.
     let value: String? /// Response value, this is an optional field to return information.
 
-    init(code: AuthumResponseCode, status: String, value: String?) {
+    init(code: ResponseCode, status: String, value: String?) {
         self.code = code
         self.status = status
         self.value = value
@@ -27,7 +27,7 @@ struct AuthumResponse {
         guard let rawStatusCode = jsonDict["code"] as? Int else {
             return nil
         }
-        guard let code = AuthumResponseCode(rawValue: rawStatusCode) else {
+        guard let code = ResponseCode(rawValue: rawStatusCode) else {
             print("unexpected response code: \(rawStatusCode)")
             return nil
         }

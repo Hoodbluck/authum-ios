@@ -83,7 +83,7 @@ class RegisterViewController: UIViewController {
         presentViewController(alertController, animated: true, completion: nil)
     }
 
-    func showRegistrationFailureAlert(response: AuthumResponse) {
+    func showRegistrationFailureAlert(response: Response) {
         let title = "Error Code \(response.code.rawValue)"
         let message = response.status
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
