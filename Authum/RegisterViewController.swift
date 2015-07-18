@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RegisterViewController.swift
 //  Authum
 //
 //  Created by Andrew Clissold on 7/18/15.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
 }
