@@ -151,6 +151,34 @@
             </objects>
             <point key="canvasLocation" x="1252" y="347"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="IGD-yL-2cx">
+            <objects>
+                <tableViewController storyboardIdentifier="HomeViewController" id="7We-jr-XMK" customClass="HomeViewController" customModule="Authum" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="5Jv-mn-dNh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="thirdPartyAppCell" id="t6p-aW-v0A">
+                                <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t6p-aW-v0A" id="LjJ-zd-b0K">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7We-jr-XMK" id="hrE-Ba-6Bk"/>
+                            <outlet property="delegate" destination="7We-jr-XMK" id="bhg-8L-L0X"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFY-Dc-akx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2086" y="347"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="kbA-EL-1nQ">
             <objects>
