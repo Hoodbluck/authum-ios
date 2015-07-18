@@ -18,14 +18,18 @@ struct AuthumResponse {
         self.value = value
     }
 
-    init?(json: [String: AnyObject]) {
-        guard let code = json["code"] as? Int else {
+    init?(json: AnyObject?) {
+        guard let jsonDict = json as? [String: AnyObject?] else {
             return nil
         }
-        guard let status = json["status"] as? String else {
+        
+        guard let code = jsonDict["code"] as? Int else {
             return nil
         }
-        let value = json["value"] as? String
+        guard let status = jsonDict["status"] as? String else {
+            return nil
+        }
+        let value = jsonDict["value"] as? String
 
         self.init(code: code, status: status, value: value)
     }

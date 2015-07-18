@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B7A96E51B5ACF3C006B519E /* AuthumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A96E41B5ACF3C006B519E /* AuthumService.swift */; };
 		779E027BA6F42C8249BCCA5E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715E62077C6D40D51D73C6A4 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B53ECE251B5ABFEB002A49AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53ECE241B5ABFEB002A49AF /* AppDelegate.swift */; };
 		B53ECE271B5ABFEB002A49AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53ECE261B5ABFEB002A49AF /* ViewController.swift */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4B7A96E41B5ACF3C006B519E /* AuthumService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthumService.swift; sourceTree = "<group>"; };
 		715E62077C6D40D51D73C6A4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7871E686F94AD2A6371A4385 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A331796ABBF08778DA458653 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B7A96E11B5ACEED006B519E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A96E41B5ACF3C006B519E /* AuthumService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		A181EBE0BF19285EFE90E548 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +156,7 @@
 		B53ECE231B5ABFEB002A49AF /* Authum */ = {
 			isa = PBXGroup;
 			children = (
+				4B7A96E11B5ACEED006B519E /* Services */,
 				B55E9B521B5ACC9300D4326A /* Models */,
 				B53ECE241B5ABFEB002A49AF /* AppDelegate.swift */,
 				B53ECE261B5ABFEB002A49AF /* ViewController.swift */,
@@ -390,6 +401,7 @@
 				B53ECE271B5ABFEB002A49AF /* ViewController.swift in Sources */,
 				B53ECE251B5ABFEB002A49AF /* AppDelegate.swift in Sources */,
 				B55E9B561B5ACCAE00D4326A /* AuthumResponse.swift in Sources */,
+				4B7A96E51B5ACF3C006B519E /* AuthumService.swift in Sources */,
 				B55E9B541B5ACCA500D4326A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
