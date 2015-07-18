@@ -21,7 +21,7 @@ class AuthumService {
         }
     }
 
-    func registerDeviceToken(token: String, forUser user: User, completion: ((AuthumResponse?, NSError?) -> Void)?){
+    func registerDeviceToken(token: String, forUser user: User, completion: ((Response?, NSError?) -> Void)?){
         
         guard let userID = user.userId else{
             completion?(nil, NSError(domain: "Something", code: -1, userInfo: nil));
@@ -33,7 +33,7 @@ class AuthumService {
         Alamofire.request(.POST, URLString:deviceURL, parameters: ["deviceToken" : token], encoding: .JSON)
             .responseJSON { (_, _, JSON, error) in
                 print(JSON)
-                completion?(AuthumResponse(json: JSON), error)
+                completion?(Response(json: JSON), error)
         }
     }
 }
