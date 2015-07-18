@@ -6,6 +6,25 @@
 //  Copyright © 2015 Hoodbluck. All rights reserved.
 //
 
+extension User: Parameterizable {
+    var parameters: [String: AnyObject] {
+        get {
+            var dictionary: [String: AnyObject] = [:]
+            if let userId = userId {
+                dictionary["userId"] = userId
+            }
+            dictionary["firstName"] = firstName
+            dictionary["lastName"] = lastName
+            dictionary["email"] = email
+            dictionary["password"] = password
+            if let deviceToken = deviceToken {
+                dictionary["deviceToken"] = deviceToken
+            }
+            return dictionary
+        }
+    }
+}
+
 struct User {
 
     var userId: Double? /// User's id.

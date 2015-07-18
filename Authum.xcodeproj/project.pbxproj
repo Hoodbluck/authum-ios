@@ -25,6 +25,7 @@
 		B55E9B541B5ACCA500D4326A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E9B531B5ACCA500D4326A /* User.swift */; };
 		B55E9B561B5ACCAE00D4326A /* AuthumResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E9B551B5ACCAE00D4326A /* AuthumResponse.swift */; };
 		B55E9B581B5ACF5D00D4326A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E9B571B5ACF5D00D4326A /* LogInViewController.swift */; };
+		B5D9C5E71B5AEC6C0000788F /* Parameterizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D9C5E61B5AEC6C0000788F /* Parameterizable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		B55E9B531B5ACCA500D4326A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B55E9B551B5ACCAE00D4326A /* AuthumResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthumResponse.swift; sourceTree = "<group>"; };
 		B55E9B571B5ACF5D00D4326A /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		B5D9C5E61B5AEC6C0000788F /* Parameterizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameterizable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		B53ECE231B5ABFEB002A49AF /* Authum */ = {
 			isa = PBXGroup;
 			children = (
+				B5D9C5E81B5AEC6E0000788F /* Protcols */,
 				4B7A96E11B5ACEED006B519E /* Services */,
 				B55E9B521B5ACC9300D4326A /* Models */,
 				B53ECE241B5ABFEB002A49AF /* AppDelegate.swift */,
@@ -209,6 +212,14 @@
 				B55E9B531B5ACCA500D4326A /* User.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		B5D9C5E81B5AEC6E0000788F /* Protcols */ = {
+			isa = PBXGroup;
+			children = (
+				B5D9C5E61B5AEC6C0000788F /* Parameterizable.swift */,
+			);
+			name = Protcols;
 			sourceTree = "<group>";
 		};
 		BED01CDBC667715EA16D9430 /* Frameworks */ = {
@@ -403,6 +414,7 @@
 			files = (
 				B53ECE271B5ABFEB002A49AF /* RegisterViewController.swift in Sources */,
 				B53ECE251B5ABFEB002A49AF /* AppDelegate.swift in Sources */,
+				B5D9C5E71B5AEC6C0000788F /* Parameterizable.swift in Sources */,
 				B55E9B561B5ACCAE00D4326A /* AuthumResponse.swift in Sources */,
 				B55E9B581B5ACF5D00D4326A /* LogInViewController.swift in Sources */,
 				4B7A96E51B5ACF3C006B519E /* AuthumService.swift in Sources */,
