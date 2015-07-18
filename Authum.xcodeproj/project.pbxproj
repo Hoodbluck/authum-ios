@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B53ECE251B5ABFEB002A49AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53ECE241B5ABFEB002A49AF /* AppDelegate.swift */; };
+		B53ECE271B5ABFEB002A49AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53ECE261B5ABFEB002A49AF /* ViewController.swift */; };
+		B53ECE2A1B5ABFEB002A49AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53ECE281B5ABFEB002A49AF /* Main.storyboard */; };
+		B53ECE2C1B5ABFEB002A49AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53ECE2B1B5ABFEB002A49AF /* Assets.xcassets */; };
+		B53ECE2F1B5ABFEB002A49AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53ECE2D1B5ABFEB002A49AF /* LaunchScreen.storyboard */; };
+		B53ECE341B5ABFEB002A49AF /* Authum WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B53ECE331B5ABFEB002A49AF /* Authum WatchKit App.app */; };
+		B53ECE3A1B5ABFEB002A49AF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53ECE381B5ABFEB002A49AF /* Interface.storyboard */; };
+		B53ECE3C1B5ABFEB002A49AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53ECE3B1B5ABFEB002A49AF /* Assets.xcassets */; };
+		B53ECE431B5ABFEB002A49AF /* Authum WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B53ECE421B5ABFEB002A49AF /* Authum WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B53ECE4A1B5ABFEB002A49AF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53ECE491B5ABFEB002A49AF /* InterfaceController.swift */; };
+		B53ECE4C1B5ABFEB002A49AF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53ECE4B1B5ABFEB002A49AF /* ExtensionDelegate.swift */; };
+		B53ECE4E1B5ABFEB002A49AF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53ECE4D1B5ABFEB002A49AF /* NotificationController.swift */; };
+		B53ECE501B5ABFEB002A49AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53ECE4F1B5ABFEB002A49AF /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B53ECE351B5ABFEB002A49AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B53ECE191B5ABFEB002A49AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B53ECE321B5ABFEB002A49AF;
+			remoteInfo = "Authum WatchKit App";
+		};
+		B53ECE441B5ABFEB002A49AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B53ECE191B5ABFEB002A49AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B53ECE411B5ABFEB002A49AF;
+			remoteInfo = "Authum WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B53ECE571B5ABFEB002A49AF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B53ECE431B5ABFEB002A49AF /* Authum WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53ECE5B1B5ABFEB002A49AF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B53ECE341B5ABFEB002A49AF /* Authum WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B53ECE211B5ABFEB002A49AF /* Authum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53ECE241B5ABFEB002A49AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B53ECE261B5ABFEB002A49AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B53ECE291B5ABFEB002A49AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B53ECE2B1B5ABFEB002A49AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B53ECE2E1B5ABFEB002A49AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B53ECE301B5ABFEB002A49AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B53ECE331B5ABFEB002A49AF /* Authum WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Authum WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53ECE391B5ABFEB002A49AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B53ECE3B1B5ABFEB002A49AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B53ECE3D1B5ABFEB002A49AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B53ECE421B5ABFEB002A49AF /* Authum WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Authum WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53ECE481B5ABFEB002A49AF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B53ECE491B5ABFEB002A49AF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B53ECE4B1B5ABFEB002A49AF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B53ECE4D1B5ABFEB002A49AF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B53ECE4F1B5ABFEB002A49AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B53ECE511B5ABFEB002A49AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B53ECE1E1B5ABFEB002A49AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53ECE3F1B5ABFEB002A49AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B53ECE181B5ABFEB002A49AF = {
+			isa = PBXGroup;
+			children = (
+				B53ECE231B5ABFEB002A49AF /* Authum */,
+				B53ECE371B5ABFEB002A49AF /* Authum WatchKit App */,
+				B53ECE461B5ABFEB002A49AF /* Authum WatchKit Extension */,
+				B53ECE221B5ABFEB002A49AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B53ECE221B5ABFEB002A49AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B53ECE211B5ABFEB002A49AF /* Authum.app */,
+				B53ECE331B5ABFEB002A49AF /* Authum WatchKit App.app */,
+				B53ECE421B5ABFEB002A49AF /* Authum WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B53ECE231B5ABFEB002A49AF /* Authum */ = {
+			isa = PBXGroup;
+			children = (
+				B53ECE241B5ABFEB002A49AF /* AppDelegate.swift */,
+				B53ECE261B5ABFEB002A49AF /* ViewController.swift */,
+				B53ECE281B5ABFEB002A49AF /* Main.storyboard */,
+				B53ECE2B1B5ABFEB002A49AF /* Assets.xcassets */,
+				B53ECE2D1B5ABFEB002A49AF /* LaunchScreen.storyboard */,
+				B53ECE301B5ABFEB002A49AF /* Info.plist */,
+			);
+			path = Authum;
+			sourceTree = "<group>";
+		};
+		B53ECE371B5ABFEB002A49AF /* Authum WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B53ECE381B5ABFEB002A49AF /* Interface.storyboard */,
+				B53ECE3B1B5ABFEB002A49AF /* Assets.xcassets */,
+				B53ECE3D1B5ABFEB002A49AF /* Info.plist */,
+			);
+			path = "Authum WatchKit App";
+			sourceTree = "<group>";
+		};
+		B53ECE461B5ABFEB002A49AF /* Authum WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B53ECE491B5ABFEB002A49AF /* InterfaceController.swift */,
+				B53ECE4B1B5ABFEB002A49AF /* ExtensionDelegate.swift */,
+				B53ECE4D1B5ABFEB002A49AF /* NotificationController.swift */,
+				B53ECE4F1B5ABFEB002A49AF /* Assets.xcassets */,
+				B53ECE511B5ABFEB002A49AF /* Info.plist */,
+				B53ECE471B5ABFEB002A49AF /* Supporting Files */,
+			);
+			path = "Authum WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B53ECE471B5ABFEB002A49AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B53ECE481B5ABFEB002A49AF /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B53ECE201B5ABFEB002A49AF /* Authum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53ECE5C1B5ABFEB002A49AF /* Build configuration list for PBXNativeTarget "Authum" */;
+			buildPhases = (
+				B53ECE1D1B5ABFEB002A49AF /* Sources */,
+				B53ECE1E1B5ABFEB002A49AF /* Frameworks */,
+				B53ECE1F1B5ABFEB002A49AF /* Resources */,
+				B53ECE5B1B5ABFEB002A49AF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B53ECE361B5ABFEB002A49AF /* PBXTargetDependency */,
+			);
+			name = Authum;
+			productName = Authum;
+			productReference = B53ECE211B5ABFEB002A49AF /* Authum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B53ECE321B5ABFEB002A49AF /* Authum WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53ECE581B5ABFEB002A49AF /* Build configuration list for PBXNativeTarget "Authum WatchKit App" */;
+			buildPhases = (
+				B53ECE311B5ABFEB002A49AF /* Resources */,
+				B53ECE571B5ABFEB002A49AF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B53ECE451B5ABFEB002A49AF /* PBXTargetDependency */,
+			);
+			name = "Authum WatchKit App";
+			productName = "Authum WatchKit App";
+			productReference = B53ECE331B5ABFEB002A49AF /* Authum WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B53ECE411B5ABFEB002A49AF /* Authum WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53ECE541B5ABFEB002A49AF /* Build configuration list for PBXNativeTarget "Authum WatchKit Extension" */;
+			buildPhases = (
+				B53ECE3E1B5ABFEB002A49AF /* Sources */,
+				B53ECE3F1B5ABFEB002A49AF /* Frameworks */,
+				B53ECE401B5ABFEB002A49AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Authum WatchKit Extension";
+			productName = "Authum WatchKit Extension";
+			productReference = B53ECE421B5ABFEB002A49AF /* Authum WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B53ECE191B5ABFEB002A49AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Hoodbluck;
+				TargetAttributes = {
+					B53ECE201B5ABFEB002A49AF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					B53ECE321B5ABFEB002A49AF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					B53ECE411B5ABFEB002A49AF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = B53ECE1C1B5ABFEB002A49AF /* Build configuration list for PBXProject "Authum" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B53ECE181B5ABFEB002A49AF;
+			productRefGroup = B53ECE221B5ABFEB002A49AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B53ECE201B5ABFEB002A49AF /* Authum */,
+				B53ECE321B5ABFEB002A49AF /* Authum WatchKit App */,
+				B53ECE411B5ABFEB002A49AF /* Authum WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B53ECE1F1B5ABFEB002A49AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53ECE2F1B5ABFEB002A49AF /* LaunchScreen.storyboard in Resources */,
+				B53ECE2C1B5ABFEB002A49AF /* Assets.xcassets in Resources */,
+				B53ECE2A1B5ABFEB002A49AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53ECE311B5ABFEB002A49AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53ECE3C1B5ABFEB002A49AF /* Assets.xcassets in Resources */,
+				B53ECE3A1B5ABFEB002A49AF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53ECE401B5ABFEB002A49AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53ECE501B5ABFEB002A49AF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B53ECE1D1B5ABFEB002A49AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53ECE271B5ABFEB002A49AF /* ViewController.swift in Sources */,
+				B53ECE251B5ABFEB002A49AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53ECE3E1B5ABFEB002A49AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53ECE4E1B5ABFEB002A49AF /* NotificationController.swift in Sources */,
+				B53ECE4C1B5ABFEB002A49AF /* ExtensionDelegate.swift in Sources */,
+				B53ECE4A1B5ABFEB002A49AF /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B53ECE361B5ABFEB002A49AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B53ECE321B5ABFEB002A49AF /* Authum WatchKit App */;
+			targetProxy = B53ECE351B5ABFEB002A49AF /* PBXContainerItemProxy */;
+		};
+		B53ECE451B5ABFEB002A49AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B53ECE411B5ABFEB002A49AF /* Authum WatchKit Extension */;
+			targetProxy = B53ECE441B5ABFEB002A49AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B53ECE281B5ABFEB002A49AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53ECE291B5ABFEB002A49AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B53ECE2D1B5ABFEB002A49AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53ECE2E1B5ABFEB002A49AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B53ECE381B5ABFEB002A49AF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53ECE391B5ABFEB002A49AF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B53ECE521B5ABFEB002A49AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B53ECE531B5ABFEB002A49AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B53ECE551B5ABFEB002A49AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Authum WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoodbluck.Authum.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		B53ECE561B5ABFEB002A49AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Authum WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoodbluck.Authum.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		B53ECE591B5ABFEB002A49AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Authum_WatchKit_Extension;
+				INFOPLIST_FILE = "Authum WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoodbluck.Authum.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		B53ECE5A1B5ABFEB002A49AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Authum_WatchKit_Extension;
+				INFOPLIST_FILE = "Authum WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoodbluck.Authum.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		B53ECE5D1B5ABFEB002A49AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Authum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoodbluck.Authum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B53ECE5E1B5ABFEB002A49AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Authum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoodbluck.Authum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B53ECE1C1B5ABFEB002A49AF /* Build configuration list for PBXProject "Authum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53ECE521B5ABFEB002A49AF /* Debug */,
+				B53ECE531B5ABFEB002A49AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B53ECE541B5ABFEB002A49AF /* Build configuration list for PBXNativeTarget "Authum WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53ECE551B5ABFEB002A49AF /* Debug */,
+				B53ECE561B5ABFEB002A49AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B53ECE581B5ABFEB002A49AF /* Build configuration list for PBXNativeTarget "Authum WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53ECE591B5ABFEB002A49AF /* Debug */,
+				B53ECE5A1B5ABFEB002A49AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B53ECE5C1B5ABFEB002A49AF /* Build configuration list for PBXNativeTarget "Authum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53ECE5D1B5ABFEB002A49AF /* Debug */,
+				B53ECE5E1B5ABFEB002A49AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B53ECE191B5ABFEB002A49AF /* Project object */;
+}
