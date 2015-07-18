@@ -21,6 +21,8 @@
 		B53ECE4C1B5ABFEB002A49AF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53ECE4B1B5ABFEB002A49AF /* ExtensionDelegate.swift */; };
 		B53ECE4E1B5ABFEB002A49AF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53ECE4D1B5ABFEB002A49AF /* NotificationController.swift */; };
 		B53ECE501B5ABFEB002A49AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53ECE4F1B5ABFEB002A49AF /* Assets.xcassets */; };
+		B55E9B541B5ACCA500D4326A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E9B531B5ACCA500D4326A /* User.swift */; };
+		B55E9B561B5ACCAE00D4326A /* AuthumResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E9B551B5ACCAE00D4326A /* AuthumResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		B53ECE4D1B5ABFEB002A49AF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		B53ECE4F1B5ABFEB002A49AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53ECE511B5ABFEB002A49AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B55E9B531B5ACCA500D4326A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B55E9B551B5ACCAE00D4326A /* AuthumResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthumResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 		B53ECE231B5ABFEB002A49AF /* Authum */ = {
 			isa = PBXGroup;
 			children = (
+				B55E9B521B5ACC9300D4326A /* Models */,
 				B53ECE241B5ABFEB002A49AF /* AppDelegate.swift */,
 				B53ECE261B5ABFEB002A49AF /* ViewController.swift */,
 				B53ECE281B5ABFEB002A49AF /* Main.storyboard */,
@@ -181,6 +186,15 @@
 				B53ECE481B5ABFEB002A49AF /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B55E9B521B5ACC9300D4326A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B55E9B551B5ACCAE00D4326A /* AuthumResponse.swift */,
+				B55E9B531B5ACCA500D4326A /* User.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		BED01CDBC667715EA16D9430 /* Frameworks */ = {
@@ -375,6 +389,8 @@
 			files = (
 				B53ECE271B5ABFEB002A49AF /* ViewController.swift in Sources */,
 				B53ECE251B5ABFEB002A49AF /* AppDelegate.swift in Sources */,
+				B55E9B561B5ACCAE00D4326A /* AuthumResponse.swift in Sources */,
+				B55E9B541B5ACCA500D4326A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
