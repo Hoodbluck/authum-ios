@@ -22,24 +22,24 @@ class RegisterViewController: UIViewController {
 
     func registerNewUser() {
         guard let firstName = firstNameTextField.text where firstName != "" else {
-            require("First Name")
+            AlertManager.sharedInstance.require("First Name", self)
             return
         }
         guard let lastName = lastNameTextField.text where lastName != "" else {
-            require("Last Name")
+            AlertManager.sharedInstance.require("Last Name", self)
             return
         }
         guard let email = emailTextField.text where email != "" else {
-            require("Email Address")
+            AlertManager.sharedInstance.require("Email Address", self)
             return
         }
         guard let password = passwordTextField.text where password != "" else {
-            require("Password")
+            AlertManager.sharedInstance.require("Password", self)
             return
         }
         guard let confirmPassword = confirmPasswordTextField.text
         where confirmPassword != "" && password == confirmPassword else {
-            requireConfirmPassword()
+            AlertManager.sharedInstance.requirePasswordConfirmation(self)
             return
         }
 
@@ -56,41 +56,11 @@ class RegisterViewController: UIViewController {
                     NotificationManager.sharedInstance.registerForPushNotifications()
                 })
             case .Failure:
-                self.showRegistrationFailureAlert(response)
+                AlertManager.sharedInstance.failure(response, self)
             case .Warning:
                 print("Error registering user: \(response.status)")
             }
         }
         confirmPasswordTextField.resignFirstResponder()
-    }
-
-    // MARK: Alerts
-
-    func require(field: String) {
-        let title = "\(field) Required"
-        let message = "Please enter your \(field.lowercaseString) and try again."
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        let OKAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
-        alertController.addAction(OKAction)
-        presentViewController(alertController, animated: true, completion: nil)
-    }
-
-    func requireConfirmPassword() {
-        let title = "Passwords Do Not Match"
-        let message = "Please ensure that you typed your password correctly and try again."
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        let OKAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
-        alertController.addAction(OKAction)
-        presentViewController(alertController, animated: true, completion: nil)
-    }
-
-    func showRegistrationFailureAlert(response: Response) {
-        let title = "Error Code \(response.code.rawValue)"
-        let message = response.status
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        let OKAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
-        alertController.addAction(OKAction)
-        presentViewController(alertController, animated: true, completion: nil)
-
     }
 }

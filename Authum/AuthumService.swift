@@ -19,6 +19,15 @@ class AuthumService {
     private let authumURL = "http://authum.hoodbluck.com"
     
     private init() {}
+
+    func logInUser(user: User, completion: ((Response?, NSError?) -> Void)?) {
+        Alamofire.request(.POST, URLString: self.authumURL+"/user/login", parameters: ["user": user.email, "password": user.password])
+            .responseJSON { (_, _, JSON, error) in
+                print(JSON)
+                let response = Response(json: JSON)
+                completion?(response, error)
+        }
+    }
     
     func registerUser(user: User, completion: ((Response?, NSError?) -> Void)?) {
         Alamofire.request(.POST, URLString: self.authumURL+"/user", parameters: user.parameters, encoding: .JSON)
