@@ -21,7 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return
         }
         
-        let token = String(data: deviceToken, encoding: NSUTF8StringEncoding)
+        var token = deviceToken.description
+        token = token.stringByReplacingOccurrencesOfString("<", withString: "")
+        token = token.stringByReplacingOccurrencesOfString(">", withString: "")
+        token = token.stringByReplacingOccurrencesOfString(" ", withString: "")
         
         AuthumService.sharedInstance.registerDeviceToken(token, forUser:currentUser) { (response, error) in
             guard let response = response else {
