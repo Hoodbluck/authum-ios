@@ -25,6 +25,13 @@ class AuthumService {
             .responseJSON { (_, _, JSON, error) in
                 print(JSON)
                 let response = Response(json: JSON)
+                
+                if let jsonUser = response?.value as AnyObject? {
+                    self.currentUser = user
+                    self.currentUser?.userId = jsonUser["userId"] as? Int
+                    self.currentUser?.deviceToken = jsonUser["deviceToken"] as? String
+                }
+                
                 completion?(response, error)
         }
     }
@@ -60,5 +67,20 @@ class AuthumService {
                 print(JSON)
                 completion?(Response(json: JSON), error)
         }
+    }
+    
+    func confirmAuthorization(clientId: String, accepted: Int){
+    
+        guard let userId = self.currentUser?.userId else {
+            return
+        }
+        
+        let confirmURL = self.authumURL+"/user/\(userId)/client/\(clientId)/auth/\(accepted)"
+        
+        Alamofire.request(.POST, URLString: confirmURL)
+            .response {(_, _, JSON, error) in
+                print(JSON)
+        }
+        
     }
 }
