@@ -53,7 +53,7 @@ class RegisterViewController: UIViewController {
             case .Success:
                 let vc = self.storyboard!.instantiateViewControllerWithIdentifier("HomeViewController")
                 self.presentViewController(vc, animated: true, completion: { () -> Void in
-                    NotificationManager.sharedInstance.registerToPushNotifications()
+                    NotificationManager.sharedInstance.registerForPushNotifications()
                 })
             case .Failure:
                 self.showRegistrationFailureAlert(response)

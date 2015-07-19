@@ -12,7 +12,7 @@ class NotificationManager {
 
     static let sharedInstance = NotificationManager()
     
-    func registerToPushNotifications() {
+    func registerForPushNotifications() {
         let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
         UIApplication.sharedApplication().registerForRemoteNotifications()
