@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B0837CD1B5B4CA30014C01B /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0837CC1B5B4CA30014C01B /* NotificationManager.swift */; };
 		4B7A96E51B5ACF3C006B519E /* AuthumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A96E41B5ACF3C006B519E /* AuthumService.swift */; };
 		779E027BA6F42C8249BCCA5E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715E62077C6D40D51D73C6A4 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B539AE641B5B4B5E0051734B /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539AE631B5B4B5E0051734B /* AlertManager.swift */; };
@@ -74,6 +75,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4B0837CC1B5B4CA30014C01B /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		4B7A96E41B5ACF3C006B519E /* AuthumService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthumService.swift; sourceTree = "<group>"; };
 		715E62077C6D40D51D73C6A4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7871E686F94AD2A6371A4385 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B0837CB1B5B4C7D0014C01B /* Mangers */ = {
+			isa = PBXGroup;
+			children = (
+				B539AE631B5B4B5E0051734B /* AlertManager.swift */,
+				4B0837CC1B5B4CA30014C01B /* NotificationManager.swift */,
+			);
+			name = Mangers;
+			sourceTree = "<group>";
+		};
 		4B7A96E11B5ACEED006B519E /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,14 +150,6 @@
 				7871E686F94AD2A6371A4385 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		B539AE651B5B4C1B0051734B /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				B539AE631B5B4B5E0051734B /* AlertManager.swift */,
-			);
-			name = Managers;
 			sourceTree = "<group>";
 		};
 		B53ECE181B5ABFEB002A49AF = {
@@ -174,8 +177,8 @@
 		B53ECE231B5ABFEB002A49AF /* Authum */ = {
 			isa = PBXGroup;
 			children = (
+				4B0837CB1B5B4C7D0014C01B /* Mangers */,
 				B5D9C5E81B5AEC6E0000788F /* Protcols */,
-				B539AE651B5B4C1B0051734B /* Managers */,
 				4B7A96E11B5ACEED006B519E /* Services */,
 				B55E9B521B5ACC9300D4326A /* Models */,
 				B53ECE241B5ABFEB002A49AF /* AppDelegate.swift */,
@@ -431,6 +434,7 @@
 			files = (
 				B53ECE271B5ABFEB002A49AF /* RegisterViewController.swift in Sources */,
 				B5D9C5EA1B5B075F0000788F /* ResponseCode.swift in Sources */,
+				4B0837CD1B5B4CA30014C01B /* NotificationManager.swift in Sources */,
 				B539AE641B5B4B5E0051734B /* AlertManager.swift in Sources */,
 				B53ECE251B5ABFEB002A49AF /* AppDelegate.swift in Sources */,
 				B5D9C5E71B5AEC6C0000788F /* Parameterizable.swift in Sources */,

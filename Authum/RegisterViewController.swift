@@ -53,7 +53,7 @@ class RegisterViewController: UIViewController {
             case .Success:
                 let vc = self.storyboard!.instantiateViewControllerWithIdentifier("HomeViewController")
                 self.presentViewController(vc, animated: true, completion: { () -> Void in
-                    self.registerForPushNotifications()
+                    NotificationManager.sharedInstance.registerForPushNotifications()
                 })
             case .Failure:
                 AlertManager.sharedInstance.failure(response, self)
@@ -62,11 +62,5 @@ class RegisterViewController: UIViewController {
             }
         }
         confirmPasswordTextField.resignFirstResponder()
-    }
-
-    func registerForPushNotifications() {
-        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
-        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
-        UIApplication.sharedApplication().registerForRemoteNotifications()
     }
 }
