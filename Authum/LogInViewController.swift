@@ -21,4 +21,17 @@ class LogInViewController: UIViewController {
         self.passwordTextField.resignFirstResponder()
     }
 
+    @IBAction func registerButtonPressed(sender: UIButton) {
+        findAndResignFirstResponder()
+    }
+
+    func findAndResignFirstResponder() {
+        for property in [emailTextField, passwordTextField] {
+            if property.isFirstResponder() {
+                property.resignFirstResponder()
+                break
+            }
+        }
+    }
+
 }
