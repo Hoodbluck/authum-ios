@@ -27,8 +27,10 @@ class AuthumService {
                 
                 let response = Response(json: JSON)
                 
-                if let jsonUser = response?.value as AnyObject?{
-                    self.currentUser = User(json: jsonUser)
+                if let jsonUser = response?.value as AnyObject? {
+                    self.currentUser = user
+                    self.currentUser?.userId = jsonUser["userId"] as? Int
+                    self.currentUser?.deviceToken = jsonUser["deviceToken"] as? String
                 }
                 
                 completion?(response, error)
@@ -44,7 +46,7 @@ class AuthumService {
         
         let deviceURL = self.authumURL+"/user/\(userID)/deviceToken"
         
-        Alamofire.request(.POST, URLString:deviceURL, parameters: ["deviceToken" : token], encoding: .JSON)
+        Alamofire.request(.POST, URLString:deviceURL, parameters: ["deviceToken" : token])
             .responseJSON { (_, _, JSON, error) in
                 print(JSON)
                 completion?(Response(json: JSON), error)
