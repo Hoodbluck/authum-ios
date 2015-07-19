@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B7A96E51B5ACF3C006B519E /* AuthumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A96E41B5ACF3C006B519E /* AuthumService.swift */; };
 		779E027BA6F42C8249BCCA5E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715E62077C6D40D51D73C6A4 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B539AE641B5B4B5E0051734B /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539AE631B5B4B5E0051734B /* AlertManager.swift */; };
 		B53ECE251B5ABFEB002A49AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53ECE241B5ABFEB002A49AF /* AppDelegate.swift */; };
 		B53ECE271B5ABFEB002A49AF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53ECE261B5ABFEB002A49AF /* RegisterViewController.swift */; };
 		B53ECE2A1B5ABFEB002A49AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53ECE281B5ABFEB002A49AF /* Main.storyboard */; };
@@ -77,6 +78,7 @@
 		715E62077C6D40D51D73C6A4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7871E686F94AD2A6371A4385 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A331796ABBF08778DA458653 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B539AE631B5B4B5E0051734B /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		B53ECE211B5ABFEB002A49AF /* Authum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53ECE241B5ABFEB002A49AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53ECE261B5ABFEB002A49AF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B539AE651B5B4C1B0051734B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B539AE631B5B4B5E0051734B /* AlertManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		B53ECE181B5ABFEB002A49AF = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				B5D9C5E81B5AEC6E0000788F /* Protcols */,
+				B539AE651B5B4C1B0051734B /* Managers */,
 				4B7A96E11B5ACEED006B519E /* Services */,
 				B55E9B521B5ACC9300D4326A /* Models */,
 				B53ECE241B5ABFEB002A49AF /* AppDelegate.swift */,
@@ -420,6 +431,7 @@
 			files = (
 				B53ECE271B5ABFEB002A49AF /* RegisterViewController.swift in Sources */,
 				B5D9C5EA1B5B075F0000788F /* ResponseCode.swift in Sources */,
+				B539AE641B5B4B5E0051734B /* AlertManager.swift in Sources */,
 				B53ECE251B5ABFEB002A49AF /* AppDelegate.swift in Sources */,
 				B5D9C5E71B5AEC6C0000788F /* Parameterizable.swift in Sources */,
 				B55E9B561B5ACCAE00D4326A /* Response.swift in Sources */,
