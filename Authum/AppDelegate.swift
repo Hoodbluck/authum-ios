@@ -15,33 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
-        
-        guard let currentUser = AuthumService.sharedInstance.currentUser else {
-            print("No user to register")
-            return
-        }
-        
-        var token = deviceToken.description
-        token = token.stringByReplacingOccurrencesOfString("<", withString: "")
-        token = token.stringByReplacingOccurrencesOfString(">", withString: "")
-        token = token.stringByReplacingOccurrencesOfString(" ", withString: "")
-        
-        AuthumService.sharedInstance.registerDeviceToken(token, forUser:currentUser) { (response, error) in
-            guard let response = response else {
-                print("Error registering device token: \(error?.localizedDescription)")
-                return
-            }
-            
-            switch response.code {
-            case .Success:
-                print("Device was registered successfully: \(response.status)")
-            case .Failure:
-                print("Error registering device token: \(response.status)")
-            case .Warning:
-                print("Device was registered with warning : \(response.status)")
-            }
-        }
-
+        NotificationManager.sharedInstance.registerCurrentUserDeviceToken(deviceToken)
     }
     
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {

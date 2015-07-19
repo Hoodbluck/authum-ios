@@ -53,7 +53,7 @@ class RegisterViewController: UIViewController {
             case .Success:
                 let vc = self.storyboard!.instantiateViewControllerWithIdentifier("HomeViewController")
                 self.presentViewController(vc, animated: true, completion: { () -> Void in
-                    self.registerToPushNotifications()
+                    NotificationManager.sharedInstance.registerToPushNotifications()
                 })
             case .Failure:
                 self.showRegistrationFailureAlert(response)
@@ -92,11 +92,5 @@ class RegisterViewController: UIViewController {
         alertController.addAction(OKAction)
         presentViewController(alertController, animated: true, completion: nil)
 
-    }
-
-    func registerToPushNotifications() {
-        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
-        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
-        UIApplication.sharedApplication().registerForRemoteNotifications()
     }
 }
