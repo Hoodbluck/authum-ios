@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UITableViewController {
     
-    let thirdPartyApps = ["Bananarama", "Chase", "Capital One"]
+    let thirdPartyApps = ["Bananarama", "Chase", "CapitalOne"]
     let thirdPartyCellIdentifier = "thirdPartyAppCell"
 
     override func viewDidLoad() {
