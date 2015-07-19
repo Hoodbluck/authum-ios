@@ -12,9 +12,14 @@ class NotificationManager {
 
     static let sharedInstance = NotificationManager()
     
+    let kAcceptActionTitle = "Accept"
+    let kAcceptActionIdentifier = "AcceptActionId"
+    let kDeclineActionTitle = "Decline"
+    let kDeclineActionIdentifier = "DeclineActionId"
+    
+    
     func registerForPushNotifications() {
-        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
-        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        UIApplication.sharedApplication().registerUserNotificationSettings(userNotificationSettings())
         UIApplication.sharedApplication().registerForRemoteNotifications()
     }
     
@@ -45,6 +50,30 @@ class NotificationManager {
                 print("Device was registered with warning : \(response.status)")
             }
         }
-
+    }
+    
+    func userNotificationSettings() -> UIUserNotificationSettings {
+    
+        let acceptAction = UIMutableUserNotificationAction()
+        acceptAction.title = kAcceptActionTitle
+        acceptAction.identifier = kAcceptActionIdentifier
+        acceptAction.activationMode = .Background
+        acceptAction.authenticationRequired = false
+        
+        let declineAction = UIMutableUserNotificationAction()
+        declineAction.title = kDeclineActionTitle
+        declineAction.identifier = kDeclineActionIdentifier
+        declineAction.activationMode = .Background
+        declineAction.authenticationRequired = false
+        
+        
+        let category = UIMutableUserNotificationCategory()
+        category.identifier = kDeclineActionIdentifier
+        category.setActions([acceptAction,declineAction], forContext: .Default)
+        category.setActions([acceptAction,declineAction], forContext: .Minimal)
+        
+        var categories = Set<UIUserNotificationCategory>()
+        categories.insert(category)
+        return UIUserNotificationSettings(forTypes: [UIUserNotificationType.Alert, .Badge, .Sound], categories: categories)
     }
 }
