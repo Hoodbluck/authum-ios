@@ -26,5 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let clientId = userInfo["clientId"] as? String
         NotificationManager.sharedInstance.handleNotificationAction(identifier, forClient: clientId)
+        
+        completionHandler()
     }
 }
