@@ -12,6 +12,18 @@
 #define COCOAPODS_VERSION_MINOR_Alamofire 2
 #define COCOAPODS_VERSION_PATCH_Alamofire 3
 
+// ChameleonFramework/Default
+#define COCOAPODS_POD_AVAILABLE_ChameleonFramework_Default
+#define COCOAPODS_VERSION_MAJOR_ChameleonFramework_Default 1
+#define COCOAPODS_VERSION_MINOR_ChameleonFramework_Default 2
+#define COCOAPODS_VERSION_PATCH_ChameleonFramework_Default 1
+
+// ChameleonFramework/Swift
+#define COCOAPODS_POD_AVAILABLE_ChameleonFramework_Swift
+#define COCOAPODS_VERSION_MAJOR_ChameleonFramework_Swift 1
+#define COCOAPODS_VERSION_MINOR_ChameleonFramework_Swift 2
+#define COCOAPODS_VERSION_PATCH_ChameleonFramework_Swift 1
+
 // Valet
 #define COCOAPODS_POD_AVAILABLE_Valet
 #define COCOAPODS_VERSION_MAJOR_Valet 1

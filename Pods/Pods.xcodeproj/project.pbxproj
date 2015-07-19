@@ -7,312 +7,445 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14D6FF15A787CD0976A0480A /* ValetDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FAACB6D979D4373B972F167A /* ValetDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		328E87BDC92258F4E5309564 /* VALSynchronizableValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CD66646C5F8F0891E79984 /* VALSynchronizableValet.m */; };
-		353D96412DB3AC781D5D79FF /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2CFEB6F13A622B3C31A35 /* Manager.swift */; };
-		3B1D6AD81797263A24E51DCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A491512C50943BA0B80C1710 /* Foundation.framework */; };
-		41223A3E6EE88EBB28E5082E /* Pods-Valet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5108729C28CFEFE58A0105 /* Pods-Valet-dummy.m */; };
-		41E6050B31739FC729237051 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483C55FFD96D966970CF495A /* Download.swift */; };
-		5AF4E25BE06735F6572E31D1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66C0B26F68B93E49740F216 /* Request.swift */; };
-		5C3ACC627B5BC97AF6A991F9 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4204A29F7C8EF3F7D35C5C5A /* Upload.swift */; };
-		6D9D8AF36802DDF4433DDFD2 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F236A90284B0BB402082E7 /* Validation.swift */; };
-		771FFE42152B81505AED7BA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A491512C50943BA0B80C1710 /* Foundation.framework */; };
-		7A2A8B17F8242CF2C75E1B17 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F5AF53CCB5C88A3F5B188E /* Pods-dummy.m */; };
-		7CB70C6DCE13EE3F4C2EE98C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A491512C50943BA0B80C1710 /* Foundation.framework */; };
-		A19FDC4ABCFD0330559F11FE /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36EB26CED5C68D73132B6C /* ParameterEncoding.swift */; };
-		A98932E1E3308DA6D41BDF4C /* Valet.h in Headers */ = {isa = PBXBuildFile; fileRef = AF402501A351C812AD17BBA1 /* Valet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B63209EB11583084DD05F8A9 /* VALValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3BED17EC00ADF6F19ECDBD /* VALValet.m */; };
-		BFD0801A28BC396DD95C143F /* VALValet.h in Headers */ = {isa = PBXBuildFile; fileRef = 2374A867F6529DB49D4953E2 /* VALValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3B653F8EBA0235AA64F2EB2 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D09DB1BBCF9B3B950DDE5F7 /* Alamofire.swift */; };
-		CB6CB03FB17B9CB83CA3CC18 /* VALSynchronizableValet.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E88D1C787665B0B4F28FEE4 /* VALSynchronizableValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAB2FEFD0C65DCA05DF57DA9 /* Pods-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8785217FCF72DB0F928AAA0 /* Pods-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E00CC2784E44CC9EE07D39FD /* VALSecureEnclaveValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A15B7A62D12D028610134C8 /* VALSecureEnclaveValet.m */; };
-		E43F23CB1905703EFCC9091C /* VALValet_Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 629AB88CE23790F5B3072590 /* VALValet_Protected.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5E112AA96193C68219EE615 /* Pods-Valet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F68EC16C030F5D32F1E5177C /* Pods-Valet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E797EE3C2018AB603A52457D /* Pods-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F083698A9FAAE2A11FD4F /* Pods-Alamofire-dummy.m */; };
-		E911A8A0BB7213FBF5335497 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4C754FEC52931AE323F5E9 /* Security.framework */; };
-		EA013A6A8ECC6D40E86AB44D /* VALSecureEnclaveValet.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A79936B7F2D0C4FDC11A17 /* VALSecureEnclaveValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB55559BCC41DA1B2B9092D1 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE0E931C3CF82EF45C7BACC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFB4CFA46CD5A7F5108C7229 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4C06F433D2425B623399A8 /* ResponseSerialization.swift */; };
+		09C3D980B1BAB0EC3A02FE85 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C4E6BC577615849398A24 /* ChameleonShorthand.swift */; };
+		1845C60CA0887031A08C2FAE /* VALValet_Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 50332058CF97B0D787EFCE53 /* VALValet_Protected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FCAE5BD0A0F1EC647B6A64F /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = FB76B23DD38C45E7656177F4 /* NSArray+Chameleon.m */; };
+		3455176DD19F41956EA9772D /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = E3875FEB9D009ABCF1FC6AC9 /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3548A16A5C1902EB620AAD80 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A6517D2EFD84D45EFAB156 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44CF2FB76E29551C2746E0AD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A546D5039222E7748B7B0E99 /* QuartzCore.framework */; };
+		48F0DEF0F7C860276E41F0CF /* ChameleonStatusBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AC554E507CE8955F0D25E6D /* ChameleonStatusBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5896DA49448B3224F4B158B0 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C20C741F0098AE9C47B036F /* Pods-dummy.m */; };
+		5C3CD436CB9403120B0D6D50 /* VALSecureEnclaveValet.h in Headers */ = {isa = PBXBuildFile; fileRef = AE43D86C6DB6F2DA477CAF1B /* VALSecureEnclaveValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F0BAD8F8153D72147D3976B /* VALSynchronizableValet.h in Headers */ = {isa = PBXBuildFile; fileRef = 190AA841A6995A1EE7321733 /* VALSynchronizableValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E2EA5AC5639A6FC8E25C94A /* VALValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F70EAE59EA9FB6C1DCBF256 /* VALValet.m */; };
+		74BC6F981CDBFC776ADA6178 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3AD762CFDF9F3845F087197 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DD9C130E926925C3EE21DDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53A81789B4420A7CF6101BE /* UIKit.framework */; };
+		7E724D90FEC409D0FF50851A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37377B7A21FAE6CE5F5B31A8 /* Request.swift */; };
+		809314AFB471713AC21094EC /* Pods-ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7EC7273970B1EDD64FCADB /* Pods-ChameleonFramework-dummy.m */; };
+		836691B0DAB778DABB84FB5F /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 63215BE59F4E88FE42DF157C /* UIViewController+Chameleon.m */; };
+		88DCB85E93A3F532E608ADA1 /* VALSynchronizableValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C605A74E82DD48E458C8D94 /* VALSynchronizableValet.m */; };
+		89727788EBC202BABE0A1A08 /* Pods-Valet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B5B8F0D7C726730F6A9472 /* Pods-Valet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A6B56D4774201538E91FA3D /* UIColor+CIELAB.m in Sources */ = {isa = PBXBuildFile; fileRef = 1211A2AF6B8AC024EC04F0BB /* UIColor+CIELAB.m */; };
+		8B4C0D3C43E5B27A4CF3BCD6 /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 9773B1BF1F13404D7ADD15C9 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BD1312E7801536DE43E1E8D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAD10D9F44D7998B0F6928E /* Alamofire.swift */; };
+		8D21E385025268C72BCA9BB2 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933C9C2551BDB2FE8B260A91 /* Manager.swift */; };
+		9C1E052A5503D4CA40B5DF36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B2DCA8E4D155165A03317A /* CoreGraphics.framework */; };
+		A02871AD5D3BE8CFB9371E19 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = E089E599B5883A5391853355 /* Download.swift */; };
+		A1CAA7B0ADC9E3C4FD75754D /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = F11EEA40D96BA8A23897B428 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3E2ABB1B0AE41225D854762 /* Valet.h in Headers */ = {isa = PBXBuildFile; fileRef = 88729B00CA874F2FF6571DD4 /* Valet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7AC4D51B05A51991E11AFD7 /* VALSecureEnclaveValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F11C3065E0503E27EC5E58 /* VALSecureEnclaveValet.m */; };
+		AA84747DC9B22F65B5C90243 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA1719592F635709F27C9F3 /* Foundation.framework */; };
+		B09B900EE7C20DD95A76584B /* UIColor+CIELAB.h in Headers */ = {isa = PBXBuildFile; fileRef = 53E42C8A21266101F292C18F /* UIColor+CIELAB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6C6BB0BE91ADB89C603D50D /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006891C4863C09C27CC61D6 /* Validation.swift */; };
+		BD4F6142319656E2132C1F49 /* Pods-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A19F922B4D876BB1791A870 /* Pods-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37ACAC4B9FCB8D6644FA9FD /* Pods-ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97E741F4A5A8F518FD8279A7 /* Pods-ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA68273E3AE2AD87EC990EC0 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBB43CFC8326141E1AD3698 /* UIColor+Chameleon.m */; };
+		CD757A4854DF1D6459E8B040 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B747660B4BE0CB4599608C6B /* ParameterEncoding.swift */; };
+		CF8BAD1023DBF600E4F3ACAF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3FD9B26EBB6E3771AB7D1A /* Security.framework */; };
+		D3B1712BA37C76E7B711BF7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA1719592F635709F27C9F3 /* Foundation.framework */; };
+		D4411CD47D37A148F1D68C2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA1719592F635709F27C9F3 /* Foundation.framework */; };
+		D51E187C2183FAD49A698FFE /* ChameleonStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D16091E0404064DF8860F9F /* ChameleonStatusBar.m */; };
+		D5471383944BA6C156906A9E /* VALValet.h in Headers */ = {isa = PBXBuildFile; fileRef = C34F9500E10E639E31F774E8 /* VALValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF65F50DA77EBB65A6B5DC20 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0E2815B1A91CDD6692FAF0 /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3555938047593BE94F98352 /* ValetDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0466478C7658FFE0A57BB366 /* ValetDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3ED92C32BD669F92E4E9885 /* Pods-Valet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA00EFBC9F2B01445596603 /* Pods-Valet-dummy.m */; };
+		EEF4CD0D2210219BC7718E52 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5F44B8BEE7C78EFE2ACF20 /* Upload.swift */; };
+		F0ABF5DC3A6907D1D61C8241 /* Pods-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5951264A7C8AD68230AD35A /* Pods-Alamofire-dummy.m */; };
+		F4BA7A5AC109F30168DB8D20 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D325E32B0B70BA0C480C335 /* ResponseSerialization.swift */; };
+		F7548D25E925F8E4C4FE5C5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA1719592F635709F27C9F3 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		158CFB8CF8D67F1D79D22578 /* PBXContainerItemProxy */ = {
+		0994DD08E07E1AE8BFCEE68F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A41DBAF633AD8CC723D22DFC /* Project object */;
+			containerPortal = A2140544E9F74AAE0F48094C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3BFF1C79CA9028DE7B0B4CDC;
-			remoteInfo = "Pods-Alamofire";
-		};
-		81EFD2DB7ABA98C49DA2A8CA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A41DBAF633AD8CC723D22DFC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8326D2F8706D6429B6DC2716;
+			remoteGlobalIDString = DECCF40A6CEE6F3A29E2E487;
 			remoteInfo = "Pods-Valet";
+		};
+		51571CEBC8D2BE9509D8B059 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2140544E9F74AAE0F48094C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3DAF3BAE3303B27977BEEF5;
+			remoteInfo = "Pods-ChameleonFramework";
+		};
+		A4D3657261CE44E6F2B4235F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2140544E9F74AAE0F48094C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AC6905C5F7293AFB8D92D57;
+			remoteInfo = "Pods-Alamofire";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09FD430173DD58F37626FD36 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		0D165A558269150D694F7394 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E00766EE3F892862A1728D6 /* Pods-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		2374A867F6529DB49D4953E2 /* VALValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet.h; path = Valet/VALValet.h; sourceTree = "<group>"; };
-		254B3018D5FD4F27581605A4 /* Pods-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alamofire.xcconfig"; sourceTree = "<group>"; };
-		27D941B34819E1B80B9EC903 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		2AD97BB0C4CB468D1190EE0C /* Pods-Valet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Valet-prefix.pch"; sourceTree = "<group>"; };
-		37F236A90284B0BB402082E7 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		3E88D1C787665B0B4F28FEE4 /* VALSynchronizableValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSynchronizableValet.h; path = Valet/VALSynchronizableValet.h; sourceTree = "<group>"; };
-		4204A29F7C8EF3F7D35C5C5A /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
-		483C55FFD96D966970CF495A /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
-		4C182086E613D2653B69447F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C3D3099BAFC7679C6FC7417 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		594F083698A9FAAE2A11FD4F /* Pods-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Alamofire-dummy.m"; sourceTree = "<group>"; };
-		5A5108729C28CFEFE58A0105 /* Pods-Valet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Valet-dummy.m"; sourceTree = "<group>"; };
-		5DAD6E2088F58F4EFCA5DE73 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F3BED17EC00ADF6F19ECDBD /* VALValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALValet.m; path = Valet/VALValet.m; sourceTree = "<group>"; };
-		61356608EF76E47C458F4C26 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		629AB88CE23790F5B3072590 /* VALValet_Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet_Protected.h; path = Valet/VALValet_Protected.h; sourceTree = "<group>"; };
-		6798CF4FA8230969B244CCCF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		6CAE71ADBD87E64BF5214B35 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D09DB1BBCF9B3B950DDE5F7 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		7A15B7A62D12D028610134C8 /* VALSecureEnclaveValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALSecureEnclaveValet.m; path = Valet/VALSecureEnclaveValet.m; sourceTree = "<group>"; };
-		7A4C06F433D2425B623399A8 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		864F200E6EAD72773B11D362 /* Valet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Valet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A4C754FEC52931AE323F5E9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		8CA62138008454DB14DEEC59 /* Pods-Valet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Valet.xcconfig"; sourceTree = "<group>"; };
-		95CD66646C5F8F0891E79984 /* VALSynchronizableValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALSynchronizableValet.m; path = Valet/VALSynchronizableValet.m; sourceTree = "<group>"; };
-		98862AD7AD8987B2F05E94A1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A491512C50943BA0B80C1710 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A9139150781059987E6E4AFE /* Pods-Valet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Valet.modulemap"; sourceTree = "<group>"; };
-		AF402501A351C812AD17BBA1 /* Valet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Valet.h; path = Valet/Valet.h; sourceTree = "<group>"; };
-		B999609B9F9A45BD77AA2C1B /* Pods-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
-		BCD91966D1B88AD371DFB630 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BF36EB26CED5C68D73132B6C /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		C5D1A46E9B29C1E6B2B9C5B1 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		C8785217FCF72DB0F928AAA0 /* Pods-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		D7A79936B7F2D0C4FDC11A17 /* VALSecureEnclaveValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSecureEnclaveValet.h; path = Valet/VALSecureEnclaveValet.h; sourceTree = "<group>"; };
-		DEEFB150BB054CFDE44F67CB /* Pods-Valet-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Valet-Private.xcconfig"; sourceTree = "<group>"; };
-		ED660176BFF30AEBEDC242C1 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		F0F5AF53CCB5C88A3F5B188E /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		F66C0B26F68B93E49740F216 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		F68EC16C030F5D32F1E5177C /* Pods-Valet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Valet-umbrella.h"; sourceTree = "<group>"; };
-		F7A58DCD1C12EF077D420E76 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		F88C404F4C811C046E1A489B /* Pods-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Alamofire.modulemap"; sourceTree = "<group>"; };
-		FAACB6D979D4373B972F167A /* ValetDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ValetDefines.h; path = Other/ValetDefines.h; sourceTree = "<group>"; };
-		FAE0E931C3CF82EF45C7BACC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		FCC2CFEB6F13A622B3C31A35 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		0466478C7658FFE0A57BB366 /* ValetDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ValetDefines.h; path = Other/ValetDefines.h; sourceTree = "<group>"; };
+		04E6639CC2A182BCE0EBD18A /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		0E2A0A8F3BF8BF4459EED110 /* Pods-ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ChameleonFramework.modulemap"; sourceTree = "<group>"; };
+		1211A2AF6B8AC024EC04F0BB /* UIColor+CIELAB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+CIELAB.m"; path = "Pod/Classes/Objective-C/UIColor+CIELAB.m"; sourceTree = "<group>"; };
+		141C0E7BD3119DAF4B220E0F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		180777971F9644EC2AEEE52D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		190AA841A6995A1EE7321733 /* VALSynchronizableValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSynchronizableValet.h; path = Valet/VALSynchronizableValet.h; sourceTree = "<group>"; };
+		1A19F922B4D876BB1791A870 /* Pods-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		2107DAEB0FEF3A07C81F9E5C /* Pods-Valet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Valet.xcconfig"; sourceTree = "<group>"; };
+		2689FF6623A2EF25C9CD48DE /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2B636C5A2FB1EFBB0B588371 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37377B7A21FAE6CE5F5B31A8 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		377AE46A7D02C96E8CBAD9F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BD5FBCBD54691BAB15ECDFE /* Pods-ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		3C9174786B3069CB2124928F /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		3D325E32B0B70BA0C480C335 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		4AC554E507CE8955F0D25E6D /* ChameleonStatusBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonStatusBar.h; path = "Pod/Classes/Objective-C/ChameleonStatusBar.h"; sourceTree = "<group>"; };
+		5006891C4863C09C27CC61D6 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		50332058CF97B0D787EFCE53 /* VALValet_Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet_Protected.h; path = Valet/VALValet_Protected.h; sourceTree = "<group>"; };
+		53E42C8A21266101F292C18F /* UIColor+CIELAB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+CIELAB.h"; path = "Pod/Classes/Objective-C/UIColor+CIELAB.h"; sourceTree = "<group>"; };
+		54807DD1722CEB9E09A3FE0A /* Pods-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Alamofire.modulemap"; sourceTree = "<group>"; };
+		57F11C3065E0503E27EC5E58 /* VALSecureEnclaveValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALSecureEnclaveValet.m; path = Valet/VALSecureEnclaveValet.m; sourceTree = "<group>"; };
+		5D0E2815B1A91CDD6692FAF0 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		5E9D3DA9A73B889FDD12EDA9 /* Pods-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		5FA1719592F635709F27C9F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		62B5B8F0D7C726730F6A9472 /* Pods-Valet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Valet-umbrella.h"; sourceTree = "<group>"; };
+		63215BE59F4E88FE42DF157C /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		6B9BD3978B784F0E2FB5217F /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		6C3FD9B26EBB6E3771AB7D1A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		6F70EAE59EA9FB6C1DCBF256 /* VALValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALValet.m; path = Valet/VALValet.m; sourceTree = "<group>"; };
+		71C2EBF95AA9FB3E91208023 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79A6517D2EFD84D45EFAB156 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		7C20C741F0098AE9C47B036F /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		7D5F44B8BEE7C78EFE2ACF20 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		854394A4DB60D9F7085796C0 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		88729B00CA874F2FF6571DD4 /* Valet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Valet.h; path = Valet/Valet.h; sourceTree = "<group>"; };
+		8A5EF456E4885606D00A7FDA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C605A74E82DD48E458C8D94 /* VALSynchronizableValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALSynchronizableValet.m; path = Valet/VALSynchronizableValet.m; sourceTree = "<group>"; };
+		8D16091E0404064DF8860F9F /* ChameleonStatusBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonStatusBar.m; path = "Pod/Classes/Objective-C/ChameleonStatusBar.m"; sourceTree = "<group>"; };
+		913C4E6BC577615849398A24 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
+		933C9C2551BDB2FE8B260A91 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		9773B1BF1F13404D7ADD15C9 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		97E741F4A5A8F518FD8279A7 /* Pods-ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
+		9D7EC7273970B1EDD64FCADB /* Pods-ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		9DA00EFBC9F2B01445596603 /* Pods-Valet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Valet-dummy.m"; sourceTree = "<group>"; };
+		9E157192E0570E95DB3680C6 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A08B541A50E864B2CFB343E2 /* Pods-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		A546D5039222E7748B7B0E99 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		ABD783E086BF6A72E5DAAE3A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		AD5341C7DA5D7CFC7E5C10A6 /* Pods-Valet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Valet-prefix.pch"; sourceTree = "<group>"; };
+		AE43D86C6DB6F2DA477CAF1B /* VALSecureEnclaveValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSecureEnclaveValet.h; path = Valet/VALSecureEnclaveValet.h; sourceTree = "<group>"; };
+		B5951264A7C8AD68230AD35A /* Pods-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		B747660B4BE0CB4599608C6B /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		B7F8ED1DBBEBCC7F28AEBFEF /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B5F735B6A8F6EE3AE4AF51 /* Pods-ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChameleonFramework.xcconfig"; sourceTree = "<group>"; };
+		C34F9500E10E639E31F774E8 /* VALValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet.h; path = Valet/VALValet.h; sourceTree = "<group>"; };
+		CAC43E150E5B53494B8C5BF6 /* Valet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Valet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9B2DCA8E4D155165A03317A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		DEBB43CFC8326141E1AD3698 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		E089E599B5883A5391853355 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		E118C160050623AE127F052E /* Pods-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		E3875FEB9D009ABCF1FC6AC9 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		E3AD762CFDF9F3845F087197 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		E53A81789B4420A7CF6101BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E8D3E0A91AEA182B8D89E94B /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		EFAD10D9F44D7998B0F6928E /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		F11EEA40D96BA8A23897B428 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		F27BAE09921200161B086FB0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5ADC435E880B736CB6FE3B2 /* Pods-Valet-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Valet-Private.xcconfig"; sourceTree = "<group>"; };
+		F8FF8105EF7F2A83E82F8132 /* Pods-Valet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Valet.modulemap"; sourceTree = "<group>"; };
+		FB76B23DD38C45E7656177F4 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		FD440C83165509D48E69B4A4 /* Pods-ChameleonFramework-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChameleonFramework-Private.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0BDD543FBE7A6E5E036611C6 /* Frameworks */ = {
+		39A9C18F5C84A12F06FC24EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CB70C6DCE13EE3F4C2EE98C /* Foundation.framework in Frameworks */,
+				F7548D25E925F8E4C4FE5C5F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0E58AC681AD84F46AAC9605C /* Frameworks */ = {
+		74C31173BDC39BA22C16175F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				771FFE42152B81505AED7BA4 /* Foundation.framework in Frameworks */,
-				E911A8A0BB7213FBF5335497 /* Security.framework in Frameworks */,
+				9C1E052A5503D4CA40B5DF36 /* CoreGraphics.framework in Frameworks */,
+				D4411CD47D37A148F1D68C2B /* Foundation.framework in Frameworks */,
+				44CF2FB76E29551C2746E0AD /* QuartzCore.framework in Frameworks */,
+				7DD9C130E926925C3EE21DDC /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76138A94A5D56F4E40903447 /* Frameworks */ = {
+		7D71D74A25AF9D3D70B16B28 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B1D6AD81797263A24E51DCB /* Foundation.framework in Frameworks */,
+				AA84747DC9B22F65B5C90243 /* Foundation.framework in Frameworks */,
+				CF8BAD1023DBF600E4F3ACAF /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD98CAB41A4B92065E71A65D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B1712BA37C76E7B711BF7D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03DDCFB7FE3052AC62FFA340 = {
+		0502BCE3D7B958127E5E5978 /* Valet */ = {
 			isa = PBXGroup;
 			children = (
-				4C3D3099BAFC7679C6FC7417 /* Podfile */,
-				453DFE05E011D01980ECEFA1 /* Frameworks */,
-				86EF14774637670972A33625 /* Pods */,
-				72E6888931A48465AB52CBDE /* Products */,
-				9C3E11171630A462E771BDC0 /* Targets Support Files */,
+				AE43D86C6DB6F2DA477CAF1B /* VALSecureEnclaveValet.h */,
+				57F11C3065E0503E27EC5E58 /* VALSecureEnclaveValet.m */,
+				190AA841A6995A1EE7321733 /* VALSynchronizableValet.h */,
+				8C605A74E82DD48E458C8D94 /* VALSynchronizableValet.m */,
+				C34F9500E10E639E31F774E8 /* VALValet.h */,
+				6F70EAE59EA9FB6C1DCBF256 /* VALValet.m */,
+				50332058CF97B0D787EFCE53 /* VALValet_Protected.h */,
+				88729B00CA874F2FF6571DD4 /* Valet.h */,
+				0466478C7658FFE0A57BB366 /* ValetDefines.h */,
+				4E20A0F234E8238D44048519 /* Support Files */,
 			);
+			path = Valet;
 			sourceTree = "<group>";
 		};
-		157F1176D772BC01BBCE9DD0 /* Support Files */ = {
+		18B3221A76C8C7467FCC7C22 /* ChameleonFramework */ = {
 			isa = PBXGroup;
 			children = (
-				0D165A558269150D694F7394 /* Info.plist */,
-				A9139150781059987E6E4AFE /* Pods-Valet.modulemap */,
-				8CA62138008454DB14DEEC59 /* Pods-Valet.xcconfig */,
-				DEEFB150BB054CFDE44F67CB /* Pods-Valet-Private.xcconfig */,
-				5A5108729C28CFEFE58A0105 /* Pods-Valet-dummy.m */,
-				2AD97BB0C4CB468D1190EE0C /* Pods-Valet-prefix.pch */,
-				F68EC16C030F5D32F1E5177C /* Pods-Valet-umbrella.h */,
+				992A7A344169DB91BA0BB1F0 /* Default */,
+				74176800169E84DCF10A6480 /* Support Files */,
+				AB557A0B4A7ECC99CACA91E4 /* Swift */,
+			);
+			path = ChameleonFramework;
+			sourceTree = "<group>";
+		};
+		1CEF3F77C84844D4432F3824 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C65E7CA360D320EE52047A96 /* Alamofire */,
+				18B3221A76C8C7467FCC7C22 /* ChameleonFramework */,
+				0502BCE3D7B958127E5E5978 /* Valet */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2025E943BF292E38E7C176D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2727B74069CA6FA22661937E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2727B74069CA6FA22661937E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D9B2DCA8E4D155165A03317A /* CoreGraphics.framework */,
+				5FA1719592F635709F27C9F3 /* Foundation.framework */,
+				A546D5039222E7748B7B0E99 /* QuartzCore.framework */,
+				6C3FD9B26EBB6E3771AB7D1A /* Security.framework */,
+				E53A81789B4420A7CF6101BE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4E20A0F234E8238D44048519 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B636C5A2FB1EFBB0B588371 /* Info.plist */,
+				F8FF8105EF7F2A83E82F8132 /* Pods-Valet.modulemap */,
+				2107DAEB0FEF3A07C81F9E5C /* Pods-Valet.xcconfig */,
+				F5ADC435E880B736CB6FE3B2 /* Pods-Valet-Private.xcconfig */,
+				9DA00EFBC9F2B01445596603 /* Pods-Valet-dummy.m */,
+				AD5341C7DA5D7CFC7E5C10A6 /* Pods-Valet-prefix.pch */,
+				62B5B8F0D7C726730F6A9472 /* Pods-Valet-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Valet";
 			sourceTree = "<group>";
 		};
-		1D6C0006B7A849D03C0D5440 /* Alamofire */ = {
+		74176800169E84DCF10A6480 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6D09DB1BBCF9B3B950DDE5F7 /* Alamofire.swift */,
-				483C55FFD96D966970CF495A /* Download.swift */,
-				FCC2CFEB6F13A622B3C31A35 /* Manager.swift */,
-				BF36EB26CED5C68D73132B6C /* ParameterEncoding.swift */,
-				F66C0B26F68B93E49740F216 /* Request.swift */,
-				7A4C06F433D2425B623399A8 /* ResponseSerialization.swift */,
-				4204A29F7C8EF3F7D35C5C5A /* Upload.swift */,
-				37F236A90284B0BB402082E7 /* Validation.swift */,
-				3E575056ECD7072EE13CAE1F /* Support Files */,
+				377AE46A7D02C96E8CBAD9F3 /* Info.plist */,
+				0E2A0A8F3BF8BF4459EED110 /* Pods-ChameleonFramework.modulemap */,
+				B9B5F735B6A8F6EE3AE4AF51 /* Pods-ChameleonFramework.xcconfig */,
+				FD440C83165509D48E69B4A4 /* Pods-ChameleonFramework-Private.xcconfig */,
+				9D7EC7273970B1EDD64FCADB /* Pods-ChameleonFramework-dummy.m */,
+				3BD5FBCBD54691BAB15ECDFE /* Pods-ChameleonFramework-prefix.pch */,
+				97E741F4A5A8F518FD8279A7 /* Pods-ChameleonFramework-umbrella.h */,
 			);
-			path = Alamofire;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ChameleonFramework";
 			sourceTree = "<group>";
 		};
-		3E575056ECD7072EE13CAE1F /* Support Files */ = {
+		7541AE3B37870A715A7A3D55 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				98862AD7AD8987B2F05E94A1 /* Info.plist */,
-				F88C404F4C811C046E1A489B /* Pods-Alamofire.modulemap */,
-				254B3018D5FD4F27581605A4 /* Pods-Alamofire.xcconfig */,
-				B999609B9F9A45BD77AA2C1B /* Pods-Alamofire-Private.xcconfig */,
-				594F083698A9FAAE2A11FD4F /* Pods-Alamofire-dummy.m */,
-				0E00766EE3F892862A1728D6 /* Pods-Alamofire-prefix.pch */,
-				C8785217FCF72DB0F928AAA0 /* Pods-Alamofire-umbrella.h */,
+				A89A89B943950B44EEA7C306 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7EC6616D2B7822B69F3F02D1 = {
+			isa = PBXGroup;
+			children = (
+				2689FF6623A2EF25C9CD48DE /* Podfile */,
+				2025E943BF292E38E7C176D2 /* Frameworks */,
+				1CEF3F77C84844D4432F3824 /* Pods */,
+				AC04F621CF8FFCD81FAD14B4 /* Products */,
+				7541AE3B37870A715A7A3D55 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9389E347BEA7BEF6F4125BB2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				71C2EBF95AA9FB3E91208023 /* Info.plist */,
+				54807DD1722CEB9E09A3FE0A /* Pods-Alamofire.modulemap */,
+				A08B541A50E864B2CFB343E2 /* Pods-Alamofire.xcconfig */,
+				E118C160050623AE127F052E /* Pods-Alamofire-Private.xcconfig */,
+				B5951264A7C8AD68230AD35A /* Pods-Alamofire-dummy.m */,
+				5E9D3DA9A73B889FDD12EDA9 /* Pods-Alamofire-prefix.pch */,
+				1A19F922B4D876BB1791A870 /* Pods-Alamofire-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Alamofire";
 			sourceTree = "<group>";
 		};
-		453DFE05E011D01980ECEFA1 /* Frameworks */ = {
+		992A7A344169DB91BA0BB1F0 /* Default */ = {
 			isa = PBXGroup;
 			children = (
-				A202CD91EC7DACEFB1FD5CC8 /* iOS */,
+				F11EEA40D96BA8A23897B428 /* Chameleon.h */,
+				9773B1BF1F13404D7ADD15C9 /* ChameleonMacros.h */,
+				4AC554E507CE8955F0D25E6D /* ChameleonStatusBar.h */,
+				8D16091E0404064DF8860F9F /* ChameleonStatusBar.m */,
+				79A6517D2EFD84D45EFAB156 /* NSArray+Chameleon.h */,
+				FB76B23DD38C45E7656177F4 /* NSArray+Chameleon.m */,
+				53E42C8A21266101F292C18F /* UIColor+CIELAB.h */,
+				1211A2AF6B8AC024EC04F0BB /* UIColor+CIELAB.m */,
+				E3875FEB9D009ABCF1FC6AC9 /* UIColor+Chameleon.h */,
+				DEBB43CFC8326141E1AD3698 /* UIColor+Chameleon.m */,
+				5D0E2815B1A91CDD6692FAF0 /* UIViewController+Chameleon.h */,
+				63215BE59F4E88FE42DF157C /* UIViewController+Chameleon.m */,
 			);
-			name = Frameworks;
+			name = Default;
 			sourceTree = "<group>";
 		};
-		72E6888931A48465AB52CBDE /* Products */ = {
+		A89A89B943950B44EEA7C306 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4C182086E613D2653B69447F /* Alamofire.framework */,
-				5DAD6E2088F58F4EFCA5DE73 /* Pods.framework */,
-				864F200E6EAD72773B11D362 /* Valet.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		86EF14774637670972A33625 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1D6C0006B7A849D03C0D5440 /* Alamofire */,
-				B5DF035AB07ECE89C9C5D3B8 /* Valet */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9524243C164F30999479E791 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6CAE71ADBD87E64BF5214B35 /* Info.plist */,
-				C5D1A46E9B29C1E6B2B9C5B1 /* Pods.modulemap */,
-				BCD91966D1B88AD371DFB630 /* Pods-acknowledgements.markdown */,
-				27D941B34819E1B80B9EC903 /* Pods-acknowledgements.plist */,
-				F0F5AF53CCB5C88A3F5B188E /* Pods-dummy.m */,
-				ED660176BFF30AEBEDC242C1 /* Pods-environment.h */,
-				61356608EF76E47C458F4C26 /* Pods-frameworks.sh */,
-				F7A58DCD1C12EF077D420E76 /* Pods-resources.sh */,
-				FAE0E931C3CF82EF45C7BACC /* Pods-umbrella.h */,
-				09FD430173DD58F37626FD36 /* Pods.debug.xcconfig */,
-				6798CF4FA8230969B244CCCF /* Pods.release.xcconfig */,
+				F27BAE09921200161B086FB0 /* Info.plist */,
+				6B9BD3978B784F0E2FB5217F /* Pods.modulemap */,
+				9E157192E0570E95DB3680C6 /* Pods-acknowledgements.markdown */,
+				3C9174786B3069CB2124928F /* Pods-acknowledgements.plist */,
+				7C20C741F0098AE9C47B036F /* Pods-dummy.m */,
+				854394A4DB60D9F7085796C0 /* Pods-environment.h */,
+				E8D3E0A91AEA182B8D89E94B /* Pods-frameworks.sh */,
+				04E6639CC2A182BCE0EBD18A /* Pods-resources.sh */,
+				E3AD762CFDF9F3845F087197 /* Pods-umbrella.h */,
+				141C0E7BD3119DAF4B220E0F /* Pods.debug.xcconfig */,
+				ABD783E086BF6A72E5DAAE3A /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		9C3E11171630A462E771BDC0 /* Targets Support Files */ = {
+		AB557A0B4A7ECC99CACA91E4 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				9524243C164F30999479E791 /* Pods */,
+				913C4E6BC577615849398A24 /* ChameleonShorthand.swift */,
 			);
-			name = "Targets Support Files";
+			name = Swift;
 			sourceTree = "<group>";
 		};
-		A202CD91EC7DACEFB1FD5CC8 /* iOS */ = {
+		AC04F621CF8FFCD81FAD14B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A491512C50943BA0B80C1710 /* Foundation.framework */,
-				8A4C754FEC52931AE323F5E9 /* Security.framework */,
+				180777971F9644EC2AEEE52D /* Alamofire.framework */,
+				B7F8ED1DBBEBCC7F28AEBFEF /* ChameleonFramework.framework */,
+				8A5EF456E4885606D00A7FDA /* Pods.framework */,
+				CAC43E150E5B53494B8C5BF6 /* Valet.framework */,
 			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		B5DF035AB07ECE89C9C5D3B8 /* Valet */ = {
+		C65E7CA360D320EE52047A96 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				D7A79936B7F2D0C4FDC11A17 /* VALSecureEnclaveValet.h */,
-				7A15B7A62D12D028610134C8 /* VALSecureEnclaveValet.m */,
-				3E88D1C787665B0B4F28FEE4 /* VALSynchronizableValet.h */,
-				95CD66646C5F8F0891E79984 /* VALSynchronizableValet.m */,
-				2374A867F6529DB49D4953E2 /* VALValet.h */,
-				5F3BED17EC00ADF6F19ECDBD /* VALValet.m */,
-				629AB88CE23790F5B3072590 /* VALValet_Protected.h */,
-				AF402501A351C812AD17BBA1 /* Valet.h */,
-				FAACB6D979D4373B972F167A /* ValetDefines.h */,
-				157F1176D772BC01BBCE9DD0 /* Support Files */,
+				EFAD10D9F44D7998B0F6928E /* Alamofire.swift */,
+				E089E599B5883A5391853355 /* Download.swift */,
+				933C9C2551BDB2FE8B260A91 /* Manager.swift */,
+				B747660B4BE0CB4599608C6B /* ParameterEncoding.swift */,
+				37377B7A21FAE6CE5F5B31A8 /* Request.swift */,
+				3D325E32B0B70BA0C480C335 /* ResponseSerialization.swift */,
+				7D5F44B8BEE7C78EFE2ACF20 /* Upload.swift */,
+				5006891C4863C09C27CC61D6 /* Validation.swift */,
+				9389E347BEA7BEF6F4125BB2 /* Support Files */,
 			);
-			path = Valet;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5B69154791591F02204AC06C /* Headers */ = {
+		3A02B6564BD85536912EDCB7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB55559BCC41DA1B2B9092D1 /* Pods-umbrella.h in Headers */,
+				BD4F6142319656E2132C1F49 /* Pods-Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A32F1775079D5E0756842BEC /* Headers */ = {
+		7DBD3DE0A74F66668C00EF06 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB2FEFD0C65DCA05DF57DA9 /* Pods-Alamofire-umbrella.h in Headers */,
+				89727788EBC202BABE0A1A08 /* Pods-Valet-umbrella.h in Headers */,
+				5C3CD436CB9403120B0D6D50 /* VALSecureEnclaveValet.h in Headers */,
+				5F0BAD8F8153D72147D3976B /* VALSynchronizableValet.h in Headers */,
+				D5471383944BA6C156906A9E /* VALValet.h in Headers */,
+				1845C60CA0887031A08C2FAE /* VALValet_Protected.h in Headers */,
+				A3E2ABB1B0AE41225D854762 /* Valet.h in Headers */,
+				E3555938047593BE94F98352 /* ValetDefines.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC652AD374D26D280A6C3B23 /* Headers */ = {
+		AAAFD10122BD0C81D63E1AA1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5E112AA96193C68219EE615 /* Pods-Valet-umbrella.h in Headers */,
-				EA013A6A8ECC6D40E86AB44D /* VALSecureEnclaveValet.h in Headers */,
-				CB6CB03FB17B9CB83CA3CC18 /* VALSynchronizableValet.h in Headers */,
-				BFD0801A28BC396DD95C143F /* VALValet.h in Headers */,
-				E43F23CB1905703EFCC9091C /* VALValet_Protected.h in Headers */,
-				A98932E1E3308DA6D41BDF4C /* Valet.h in Headers */,
-				14D6FF15A787CD0976A0480A /* ValetDefines.h in Headers */,
+				74BC6F981CDBFC776ADA6178 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6F3A4805AC40EE9A97DFA8A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CAA7B0ADC9E3C4FD75754D /* Chameleon.h in Headers */,
+				8B4C0D3C43E5B27A4CF3BCD6 /* ChameleonMacros.h in Headers */,
+				48F0DEF0F7C860276E41F0CF /* ChameleonStatusBar.h in Headers */,
+				3548A16A5C1902EB620AAD80 /* NSArray+Chameleon.h in Headers */,
+				C37ACAC4B9FCB8D6644FA9FD /* Pods-ChameleonFramework-umbrella.h in Headers */,
+				B09B900EE7C20DD95A76584B /* UIColor+CIELAB.h in Headers */,
+				3455176DD19F41956EA9772D /* UIColor+Chameleon.h in Headers */,
+				DF65F50DA77EBB65A6B5DC20 /* UIViewController+Chameleon.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3BFF1C79CA9028DE7B0B4CDC /* Pods-Alamofire */ = {
+		0AC6905C5F7293AFB8D92D57 /* Pods-Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46731F5B2C834876D483E5E5 /* Build configuration list for PBXNativeTarget "Pods-Alamofire" */;
+			buildConfigurationList = DC9C2BCC677B1DD62BD8698C /* Build configuration list for PBXNativeTarget "Pods-Alamofire" */;
 			buildPhases = (
-				BE2D0D2DD0DB2F465DF63F39 /* Sources */,
-				76138A94A5D56F4E40903447 /* Frameworks */,
-				A32F1775079D5E0756842BEC /* Headers */,
+				DC8E9C91973DEF88E45D7AB0 /* Sources */,
+				39A9C18F5C84A12F06FC24EE /* Frameworks */,
+				3A02B6564BD85536912EDCB7 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -320,16 +453,53 @@
 			);
 			name = "Pods-Alamofire";
 			productName = "Pods-Alamofire";
-			productReference = 4C182086E613D2653B69447F /* Alamofire.framework */;
+			productReference = 180777971F9644EC2AEEE52D /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8326D2F8706D6429B6DC2716 /* Pods-Valet */ = {
+		25256BAE20F33DAEB7EE9CFC /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD4A860E99CA385DAF351421 /* Build configuration list for PBXNativeTarget "Pods-Valet" */;
+			buildConfigurationList = 62096EBFB58AF165A640D78A /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				D8C7F11B2F728E3B4E7A7FD6 /* Sources */,
-				0E58AC681AD84F46AAC9605C /* Frameworks */,
-				FC652AD374D26D280A6C3B23 /* Headers */,
+				4B9326995FEAFA2CAEF41BDC /* Sources */,
+				BD98CAB41A4B92065E71A65D /* Frameworks */,
+				AAAFD10122BD0C81D63E1AA1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4070E0EC422BB54FCF7F2A7 /* PBXTargetDependency */,
+				80D7524C56A492C9938B7A59 /* PBXTargetDependency */,
+				37A52684605C9D529EA2C27B /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 8A5EF456E4885606D00A7FDA /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C3DAF3BAE3303B27977BEEF5 /* Pods-ChameleonFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB0BE79CF2A009F3BB617172 /* Build configuration list for PBXNativeTarget "Pods-ChameleonFramework" */;
+			buildPhases = (
+				B3EB72B1B8F899B0D58A54F9 /* Sources */,
+				74C31173BDC39BA22C16175F /* Frameworks */,
+				F6F3A4805AC40EE9A97DFA8A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ChameleonFramework";
+			productName = "Pods-ChameleonFramework";
+			productReference = B7F8ED1DBBEBCC7F28AEBFEF /* ChameleonFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DECCF40A6CEE6F3A29E2E487 /* Pods-Valet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42B89AE1E1BA3BC868FFD324 /* Build configuration list for PBXNativeTarget "Pods-Valet" */;
+			buildPhases = (
+				E3978955B1CD314F45734CE3 /* Sources */,
+				7D71D74A25AF9D3D70B16B28 /* Frameworks */,
+				7DBD3DE0A74F66668C00EF06 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -337,113 +507,199 @@
 			);
 			name = "Pods-Valet";
 			productName = "Pods-Valet";
-			productReference = 864F200E6EAD72773B11D362 /* Valet.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A86F7DBCF4CC54CE5F5A00C9 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F313CBC869EC1BAB95EE75C3 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				7FD16FB4D9C2438260636617 /* Sources */,
-				0BDD543FBE7A6E5E036611C6 /* Frameworks */,
-				5B69154791591F02204AC06C /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D4BD84DF7C1C2AD2DE1225C1 /* PBXTargetDependency */,
-				77E1F40D0083D6BA3F7CADCC /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = 5DAD6E2088F58F4EFCA5DE73 /* Pods.framework */;
+			productReference = CAC43E150E5B53494B8C5BF6 /* Valet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A41DBAF633AD8CC723D22DFC /* Project object */ = {
+		A2140544E9F74AAE0F48094C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 8C509F9480A3C9C433AB3285 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 5975ACF0ACB16CA47FEC5692 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 03DDCFB7FE3052AC62FFA340;
-			productRefGroup = 72E6888931A48465AB52CBDE /* Products */;
+			mainGroup = 7EC6616D2B7822B69F3F02D1;
+			productRefGroup = AC04F621CF8FFCD81FAD14B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A86F7DBCF4CC54CE5F5A00C9 /* Pods */,
-				3BFF1C79CA9028DE7B0B4CDC /* Pods-Alamofire */,
-				8326D2F8706D6429B6DC2716 /* Pods-Valet */,
+				25256BAE20F33DAEB7EE9CFC /* Pods */,
+				0AC6905C5F7293AFB8D92D57 /* Pods-Alamofire */,
+				C3DAF3BAE3303B27977BEEF5 /* Pods-ChameleonFramework */,
+				DECCF40A6CEE6F3A29E2E487 /* Pods-Valet */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7FD16FB4D9C2438260636617 /* Sources */ = {
+		4B9326995FEAFA2CAEF41BDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A2A8B17F8242CF2C75E1B17 /* Pods-dummy.m in Sources */,
+				5896DA49448B3224F4B158B0 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE2D0D2DD0DB2F465DF63F39 /* Sources */ = {
+		B3EB72B1B8F899B0D58A54F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B653F8EBA0235AA64F2EB2 /* Alamofire.swift in Sources */,
-				41E6050B31739FC729237051 /* Download.swift in Sources */,
-				353D96412DB3AC781D5D79FF /* Manager.swift in Sources */,
-				A19FDC4ABCFD0330559F11FE /* ParameterEncoding.swift in Sources */,
-				E797EE3C2018AB603A52457D /* Pods-Alamofire-dummy.m in Sources */,
-				5AF4E25BE06735F6572E31D1 /* Request.swift in Sources */,
-				FFB4CFA46CD5A7F5108C7229 /* ResponseSerialization.swift in Sources */,
-				5C3ACC627B5BC97AF6A991F9 /* Upload.swift in Sources */,
-				6D9D8AF36802DDF4433DDFD2 /* Validation.swift in Sources */,
+				09C3D980B1BAB0EC3A02FE85 /* ChameleonShorthand.swift in Sources */,
+				D51E187C2183FAD49A698FFE /* ChameleonStatusBar.m in Sources */,
+				1FCAE5BD0A0F1EC647B6A64F /* NSArray+Chameleon.m in Sources */,
+				809314AFB471713AC21094EC /* Pods-ChameleonFramework-dummy.m in Sources */,
+				8A6B56D4774201538E91FA3D /* UIColor+CIELAB.m in Sources */,
+				CA68273E3AE2AD87EC990EC0 /* UIColor+Chameleon.m in Sources */,
+				836691B0DAB778DABB84FB5F /* UIViewController+Chameleon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8C7F11B2F728E3B4E7A7FD6 /* Sources */ = {
+		DC8E9C91973DEF88E45D7AB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41223A3E6EE88EBB28E5082E /* Pods-Valet-dummy.m in Sources */,
-				E00CC2784E44CC9EE07D39FD /* VALSecureEnclaveValet.m in Sources */,
-				328E87BDC92258F4E5309564 /* VALSynchronizableValet.m in Sources */,
-				B63209EB11583084DD05F8A9 /* VALValet.m in Sources */,
+				8BD1312E7801536DE43E1E8D /* Alamofire.swift in Sources */,
+				A02871AD5D3BE8CFB9371E19 /* Download.swift in Sources */,
+				8D21E385025268C72BCA9BB2 /* Manager.swift in Sources */,
+				CD757A4854DF1D6459E8B040 /* ParameterEncoding.swift in Sources */,
+				F0ABF5DC3A6907D1D61C8241 /* Pods-Alamofire-dummy.m in Sources */,
+				7E724D90FEC409D0FF50851A /* Request.swift in Sources */,
+				F4BA7A5AC109F30168DB8D20 /* ResponseSerialization.swift in Sources */,
+				EEF4CD0D2210219BC7718E52 /* Upload.swift in Sources */,
+				B6C6BB0BE91ADB89C603D50D /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3978955B1CD314F45734CE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3ED92C32BD669F92E4E9885 /* Pods-Valet-dummy.m in Sources */,
+				A7AC4D51B05A51991E11AFD7 /* VALSecureEnclaveValet.m in Sources */,
+				88DCB85E93A3F532E608ADA1 /* VALSynchronizableValet.m in Sources */,
+				6E2EA5AC5639A6FC8E25C94A /* VALValet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		77E1F40D0083D6BA3F7CADCC /* PBXTargetDependency */ = {
+		37A52684605C9D529EA2C27B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Valet";
-			target = 8326D2F8706D6429B6DC2716 /* Pods-Valet */;
-			targetProxy = 81EFD2DB7ABA98C49DA2A8CA /* PBXContainerItemProxy */;
+			target = DECCF40A6CEE6F3A29E2E487 /* Pods-Valet */;
+			targetProxy = 0994DD08E07E1AE8BFCEE68F /* PBXContainerItemProxy */;
 		};
-		D4BD84DF7C1C2AD2DE1225C1 /* PBXTargetDependency */ = {
+		80D7524C56A492C9938B7A59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ChameleonFramework";
+			target = C3DAF3BAE3303B27977BEEF5 /* Pods-ChameleonFramework */;
+			targetProxy = 51571CEBC8D2BE9509D8B059 /* PBXContainerItemProxy */;
+		};
+		E4070E0EC422BB54FCF7F2A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Alamofire";
-			target = 3BFF1C79CA9028DE7B0B4CDC /* Pods-Alamofire */;
-			targetProxy = 158CFB8CF8D67F1D79D22578 /* PBXContainerItemProxy */;
+			target = 0AC6905C5F7293AFB8D92D57 /* Pods-Alamofire */;
+			targetProxy = A4D3657261CE44E6F2B4235F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06FD1D43F0C157DB1E550ADB /* Release */ = {
+		07A1006236B875AA1CAFB628 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B999609B9F9A45BD77AA2C1B /* Pods-Alamofire-Private.xcconfig */;
+			baseConfigurationReference = F5ADC435E880B736CB6FE3B2 /* Pods-Valet-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Valet/Pods-Valet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Valet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Valet/Pods-Valet.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Valet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25AC89772102F5A95A3059CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD440C83165509D48E69B4A4 /* Pods-ChameleonFramework-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ChameleonFramework/Pods-ChameleonFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChameleonFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ChameleonFramework/Pods-ChameleonFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ChameleonFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A1D8A7F8882CECE4DA6AC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 141C0E7BD3119DAF4B220E0F /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D815C5223C46FB366D9C556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E118C160050623AE127F052E /* Pods-Alamofire-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -459,7 +715,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-Alamofire/Pods-Alamofire.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -469,7 +724,130 @@
 			};
 			name = Release;
 		};
-		0B2A43CE437AA981C689D315 /* Release */ = {
+		781C48F525AC6CB06C1E4A2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		94E24CF8C5D4E51FD247C914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD440C83165509D48E69B4A4 /* Pods-ChameleonFramework-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ChameleonFramework/Pods-ChameleonFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChameleonFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ChameleonFramework/Pods-ChameleonFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ChameleonFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		971FA8328F53D38B6D6E1719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E118C160050623AE127F052E /* Pods-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Alamofire/Pods-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Alamofire/Pods-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B48817FC39801B0033901B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABD783E086BF6A72E5DAAE3A /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D10F9B0136D8BCB19678D68A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -503,167 +881,9 @@
 			};
 			name = Release;
 		};
-		30BBA2CB78FC071F836B0BD0 /* Debug */ = {
+		E54B988CF85C69C5624DB5DB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		74E66C205F036FEF4BC5B520 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B999609B9F9A45BD77AA2C1B /* Pods-Alamofire-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Alamofire/Pods-Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Alamofire/Pods-Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D6BF758E379B26189A8CE426 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEEFB150BB054CFDE44F67CB /* Pods-Valet-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Valet/Pods-Valet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Valet/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Valet/Pods-Valet.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Valet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E747EBC995CCDAD9E5B6EF28 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09FD430173DD58F37626FD36 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EF4579E07B565FC2C8AD6981 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6798CF4FA8230969B244CCCF /* Pods.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FDEFED09CC6D9E6AC52AD318 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEEFB150BB054CFDE44F67CB /* Pods-Valet-Private.xcconfig */;
+			baseConfigurationReference = F5ADC435E880B736CB6FE3B2 /* Pods-Valet-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -679,7 +899,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-Valet/Pods-Valet.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Valet;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -692,43 +911,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		46731F5B2C834876D483E5E5 /* Build configuration list for PBXNativeTarget "Pods-Alamofire" */ = {
+		42B89AE1E1BA3BC868FFD324 /* Build configuration list for PBXNativeTarget "Pods-Valet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74E66C205F036FEF4BC5B520 /* Debug */,
-				06FD1D43F0C157DB1E550ADB /* Release */,
+				E54B988CF85C69C5624DB5DB /* Debug */,
+				07A1006236B875AA1CAFB628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C509F9480A3C9C433AB3285 /* Build configuration list for PBXProject "Pods" */ = {
+		5975ACF0ACB16CA47FEC5692 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				30BBA2CB78FC071F836B0BD0 /* Debug */,
-				0B2A43CE437AA981C689D315 /* Release */,
+				781C48F525AC6CB06C1E4A2D /* Debug */,
+				D10F9B0136D8BCB19678D68A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD4A860E99CA385DAF351421 /* Build configuration list for PBXNativeTarget "Pods-Valet" */ = {
+		62096EBFB58AF165A640D78A /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDEFED09CC6D9E6AC52AD318 /* Debug */,
-				D6BF758E379B26189A8CE426 /* Release */,
+				6A1D8A7F8882CECE4DA6AC5F /* Debug */,
+				B48817FC39801B0033901B90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F313CBC869EC1BAB95EE75C3 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		DB0BE79CF2A009F3BB617172 /* Build configuration list for PBXNativeTarget "Pods-ChameleonFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E747EBC995CCDAD9E5B6EF28 /* Debug */,
-				EF4579E07B565FC2C8AD6981 /* Release */,
+				25AC89772102F5A95A3059CA /* Debug */,
+				94E24CF8C5D4E51FD247C914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC9C2BCC677B1DD62BD8698C /* Build configuration list for PBXNativeTarget "Pods-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971FA8328F53D38B6D6E1719 /* Debug */,
+				6D815C5223C46FB366D9C556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A41DBAF633AD8CC723D22DFC /* Project object */;
+	rootObject = A2140544E9F74AAE0F48094C /* Project object */;
 }
