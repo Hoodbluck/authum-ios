@@ -25,6 +25,13 @@ class AuthumService {
             .responseJSON { (_, _, JSON, error) in
                 print(JSON)
                 let response = Response(json: JSON)
+                
+                if let jsonUser = response?.value as AnyObject? {
+                    self.currentUser = user
+                    self.currentUser?.userId = jsonUser["userId"] as? Int
+                    self.currentUser?.deviceToken = jsonUser["deviceToken"] as? String
+                }
+                
                 completion?(response, error)
         }
     }
