@@ -8,16 +8,30 @@
 
 import UIKit
 import Alamofire
+import Foundation
 
 class AuthumService {
+    
+    var currentUser: User?
+    
+    static let sharedInstance = AuthumService()
 
     private let authumURL = "http://authum.hoodbluck.com"
+    
+    private init() {}
     
     func registerUser(user: User, completion: ((Response?, NSError?) -> Void)?) {
         Alamofire.request(.POST, URLString: self.authumURL+"/user", parameters: user.parameters, encoding: .JSON)
             .responseJSON { (_, _, JSON, error) in
                 print(JSON)
-                completion?(Response(json: JSON), error)
+                
+                let response = Response(json: JSON)
+                
+                if let jsonUser = response?.value as AnyObject?{
+                    self.currentUser = User(json: jsonUser)
+                }
+                
+                completion?(response, error)
         }
     }
 
