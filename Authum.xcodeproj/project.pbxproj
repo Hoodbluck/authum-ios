@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B0837CD1B5B4CA30014C01B /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0837CC1B5B4CA30014C01B /* NotificationManager.swift */; };
+		4B0837CF1B5B7C1C0014C01B /* ThirdPartyAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0837CE1B5B7C1C0014C01B /* ThirdPartyAppCell.swift */; };
 		4B7A96E51B5ACF3C006B519E /* AuthumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A96E41B5ACF3C006B519E /* AuthumService.swift */; };
 		779E027BA6F42C8249BCCA5E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715E62077C6D40D51D73C6A4 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B539AE641B5B4B5E0051734B /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539AE631B5B4B5E0051734B /* AlertManager.swift */; };
@@ -76,6 +77,7 @@
 
 /* Begin PBXFileReference section */
 		4B0837CC1B5B4CA30014C01B /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		4B0837CE1B5B7C1C0014C01B /* ThirdPartyAppCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPartyAppCell.swift; sourceTree = "<group>"; };
 		4B7A96E41B5ACF3C006B519E /* AuthumService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthumService.swift; sourceTree = "<group>"; };
 		715E62077C6D40D51D73C6A4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7871E686F94AD2A6371A4385 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				B53ECE2B1B5ABFEB002A49AF /* Assets.xcassets */,
 				B53ECE2D1B5ABFEB002A49AF /* LaunchScreen.storyboard */,
 				B53ECE301B5ABFEB002A49AF /* Info.plist */,
+				4B0837CE1B5B7C1C0014C01B /* ThirdPartyAppCell.swift */,
 			);
 			path = Authum;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				B5D9C5EC1B5B0E260000788F /* HomeViewController.swift in Sources */,
 				B55E9B581B5ACF5D00D4326A /* LogInViewController.swift in Sources */,
 				4B7A96E51B5ACF3C006B519E /* AuthumService.swift in Sources */,
+				4B0837CF1B5B7C1C0014C01B /* ThirdPartyAppCell.swift in Sources */,
 				B55E9B541B5ACCA500D4326A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
