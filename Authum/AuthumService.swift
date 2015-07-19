@@ -38,7 +38,7 @@ class AuthumService {
     func registerDeviceToken(token: String, forUser user: User, completion: ((Response?, NSError?) -> Void)?){
         
         guard let userID = user.userId else{
-            completion?(nil, NSError(domain: "Something", code: -1, userInfo: nil));
+            completion?(nil, NSError(domain: "No userID to register", code: -1, userInfo: nil));
             return
         }
         
