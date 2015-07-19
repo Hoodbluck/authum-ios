@@ -1,16 +1,20 @@
 {
     "aps": {
         "alert": {
-            "body": "Test message",
-            "title": "Optional title"
+            "body": "“Bananarama” would like to authenticate.",
+            "title": "Request"
         },
-        "category": "myCategory"
+        "category": "AUTHENTICATE_CATEGORY"
     },
     
     "WatchKit Simulator Actions": [
         {
-            "title": "First Button",
-            "identifier": "firstButtonAction"
+            "title": "Accept",
+            "identifier": "acceptAction"
+        },
+        {
+            "title": "Decline",
+            "identifier": "declineAction"
         }
     ],
     
