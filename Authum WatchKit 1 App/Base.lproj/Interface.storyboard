@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8077.2"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Authum_WatchKit_1_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="hIV-W7-xYI">
+                            <items>
+                                <tableRow identifier="thirdPartyApp" id="5bR-df-eGM" customClass="ThirdPartyAppRowController" customModule="Authum_WatchKit_1_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="c0o-ge-lHu">
+                                        <items>
+                                            <imageView width="39" height="39" alignment="left" id="X1V-w1-zTO"/>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="W7n-tm-wa1"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="image" destination="X1V-w1-zTO" id="s88-Rb-Yvc"/>
+                                        <outlet property="label" destination="W7n-tm-wa1" id="eC1-zX-dnQ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="hIV-W7-xYI" id="MjY-TU-U4R"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="344.5"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="AUTHENTICATION_ACTION" wantsSashBlur="YES" id="JfB-70-Muf">
+                        <color key="sashColor" red="0.66666666669999997" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+    </scenes>
+</document>
