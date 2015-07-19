@@ -86,9 +86,9 @@ class NotificationManager {
         switch actionIdentifier {
         
         case .Some(kAcceptActionIdentifier):
-            AuthumService.sharedInstance.confirmAuthorization(clientId, accepted:1)
+            AuthumService.sharedInstance.confirmAuthorization(clientId, accepted:true)
         case .Some(kDeclineActionIdentifier):
-            AuthumService.sharedInstance.confirmAuthorization(clientId, accepted:0)
+            AuthumService.sharedInstance.confirmAuthorization(clientId, accepted:false)
         default:
             print("\(actionIdentifier) Not found")
         }
