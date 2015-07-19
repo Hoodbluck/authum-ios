@@ -76,4 +76,19 @@ class NotificationManager {
         categories.insert(category)
         return UIUserNotificationSettings(forTypes: [UIUserNotificationType.Alert, UIUserNotificationType.Badge], categories: categories)
     }
+    
+    func handleNotificationAction(actionIdentifier: String?) {
+        
+        switch actionIdentifier {
+        
+        case .Some(kAcceptActionIdentifier):
+            // TODO: Implement Authum call
+            print("Accepted action")
+        case .Some(kDeclineActionIdentifier):
+            // TODO: Implement Authum call
+            print("Decline action")
+        default:
+            print("\(actionIdentifier) Not found")
+        }
+    }
 }
