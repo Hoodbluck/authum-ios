@@ -69,18 +69,19 @@ class AuthumService {
         }
     }
     
-    func confirmAuthorization(clientId: String, accepted: Int){
+    func confirmAuthorization(clientId: String, accepted: Bool){
     
         guard let userId = self.currentUser?.userId else {
             return
         }
         
-        let confirmURL = self.authumURL+"/user/\(userId)/client/\(clientId)/auth/\(accepted)"
-        
-        Alamofire.request(.POST, URLString: confirmURL)
-            .response {(_, _, JSON, error) in
+        let flag = accepted ? 1 : 0
+        let confirmURL = self.authumURL+"/user/\(userId)/client/\(clientId)/auth/\(flag)"
+            
+        Alamofire.request(.GET, URLString: confirmURL)
+            .response { (_, response, JSON, error) in
                 print(JSON)
         }
-        
+
     }
 }
