@@ -29,14 +29,14 @@ extension User: Parameterizable {
 
 struct User {
 
-    var userId: Double? /// User's id.
+    var userId: Int? /// User's id.
     let firstName: String /// User's first name.
     let lastName: String /// User's last name.
     let email: String /// User's email.
     let password: String /// User's password.
     var deviceToken: String? /// User's device token.
 
-    init(userId: Double?, firstName: String, lastName: String, email: String, password: String, deviceToken: String?) {
+    init(userId: Int?, firstName: String, lastName: String, email: String, password: String, deviceToken: String?) {
         self.userId = userId
         self.firstName = firstName
         self.lastName = lastName
@@ -51,7 +51,7 @@ struct User {
             return nil
         }
         
-        let userId = jsonDict["userId"] as? Double
+        let userId = jsonDict["userId"] as? Int
         guard let firstName = jsonDict["firstName"] as? String else {
             return nil
         }
