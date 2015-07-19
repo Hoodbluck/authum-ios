@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forRemoteNotification userInfo: [NSObject : AnyObject], completionHandler: () -> Void) {
-        NotificationManager.sharedInstance.handleNotificationAction(identifier)
+        
+        let clientId = userInfo["clientId"] as? String
+        NotificationManager.sharedInstance.handleNotificationAction(identifier, forClient: clientId)
     }
 }

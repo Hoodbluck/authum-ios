@@ -77,8 +77,8 @@ class NotificationManager {
         return UIUserNotificationSettings(forTypes: [UIUserNotificationType.Alert, UIUserNotificationType.Badge], categories: categories)
     }
     
-    func handleNotificationAction(actionIdentifier: String?) {
-        
+    func handleNotificationAction(actionIdentifier: String?, forClient client: String?) {
+    
         switch actionIdentifier {
         
         case .Some(kAcceptActionIdentifier):
