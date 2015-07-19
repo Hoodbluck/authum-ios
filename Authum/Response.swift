@@ -12,9 +12,9 @@ struct Response {
 
     let code: ResponseCode /// Status code of the action, -1 = failure, 0 = success, 1 = warning.
     let status: String /// Response status, this should be specified on the API process definition.
-    let value: String? /// Response value, this is an optional field to return information.
+    let value: AnyObject? /// Response value, this is an optional field to return information.
 
-    init(code: ResponseCode, status: String, value: String?) {
+    init(code: ResponseCode, status: String, value: AnyObject?) {
         self.code = code
         self.status = status
         self.value = value
@@ -34,7 +34,10 @@ struct Response {
         guard let status = jsonDict["status"] as? String else {
             return nil
         }
-        let value = jsonDict["value"] as? String
+        
+        guard let value = jsonDict["value"] as AnyObject? else{
+            return nil
+        }
 
         self.init(code: code, status: status, value: value)
     }
