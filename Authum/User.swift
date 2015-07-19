@@ -6,6 +6,8 @@
 //  Copyright © 2015 Hoodbluck. All rights reserved.
 //
 
+import Foundation
+
 extension User: Parameterizable {
     var parameters: [String: AnyObject] {
         get {
@@ -43,21 +45,26 @@ struct User {
         self.deviceToken = deviceToken
     }
 
-    init?(json: [String: AnyObject]) {
-        let userId = json["userId"] as? Double
-        guard let firstName = json["firstName"] as? String else {
+    init?(json: AnyObject?) {
+        
+        guard let jsonDict = json as? NSDictionary else {
             return nil
         }
-        guard let lastName = json["lastName"] as? String else {
+        
+        let userId = jsonDict["userId"] as? Double
+        guard let firstName = jsonDict["firstName"] as? String else {
             return nil
         }
-        guard let email = json["email"] as? String else {
+        guard let lastName = jsonDict["lastName"] as? String else {
             return nil
         }
-        guard let password = json["password"] as? String else {
+        guard let email = jsonDict["email"] as? String else {
             return nil
         }
-        let deviceToken = json["deviceToken"] as? String
+        guard let password = jsonDict["password"] as? String else {
+            return nil
+        }
+        let deviceToken = jsonDict["deviceToken"] as? String
 
         self.init(userId: userId, firstName: firstName, lastName: lastName, email: email, password: password, deviceToken: deviceToken)
     }

@@ -44,8 +44,7 @@ class RegisterViewController: UIViewController {
         }
 
         let user = User(userId: nil, firstName: firstName, lastName: lastName, email: email, password: password, deviceToken: nil)
-        let authumService = AuthumService()
-        authumService.registerUser(user) { (response, error) in
+        AuthumService.sharedInstance.registerUser(user) { (response, error) in
             guard let response = response else {
                 print("Error registering user: \(error?.localizedDescription)")
                 return
@@ -53,7 +52,9 @@ class RegisterViewController: UIViewController {
             switch response.code {
             case .Success:
                 let vc = self.storyboard!.instantiateViewControllerWithIdentifier("HomeViewController")
-                self.presentViewController(vc, animated: true, completion: nil)
+                self.presentViewController(vc, animated: true, completion: { () -> Void in
+                    self.registerToPushNotifications()
+                })
             case .Failure:
                 self.showRegistrationFailureAlert(response)
             case .Warning:
@@ -93,4 +94,9 @@ class RegisterViewController: UIViewController {
 
     }
 
+    func registerToPushNotifications() {
+        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        UIApplication.sharedApplication().registerForRemoteNotifications()
+    }
 }
