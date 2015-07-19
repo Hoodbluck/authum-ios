@@ -30,6 +30,11 @@ class HomeViewController: UITableViewController {
         }
         
         cell?.appNameLabel.text = thirdPartyApps[indexPath.row]
+        
+        cell?.appIconImage.layer.cornerRadius = 5.0;
+        cell?.appIconImage.layer.masksToBounds = true;
+        cell?.appIconImage.layer.borderColor = UIColor.lightGrayColor().CGColor;
+        cell?.appIconImage.layer.borderWidth = 1.0;
         cell?.appIconImage.image = UIImage(named: thirdPartyApps[indexPath.row])
         
         return cell!
