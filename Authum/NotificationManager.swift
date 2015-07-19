@@ -79,14 +79,16 @@ class NotificationManager {
     
     func handleNotificationAction(actionIdentifier: String?, forClient client: String?) {
     
+        guard let clientId = client else {
+            return
+        }
+        
         switch actionIdentifier {
         
         case .Some(kAcceptActionIdentifier):
-            // TODO: Implement Authum call
-            print("Accepted action")
+            AuthumService.sharedInstance.confirmAuthorization(clientId, accepted:1)
         case .Some(kDeclineActionIdentifier):
-            // TODO: Implement Authum call
-            print("Decline action")
+            AuthumService.sharedInstance.confirmAuthorization(clientId, accepted:0)
         default:
             print("\(actionIdentifier) Not found")
         }
