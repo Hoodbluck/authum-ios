@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class LogInViewController: UIViewController {
 
@@ -15,6 +16,7 @@ class LogInViewController: UIViewController {
 
     override func viewDidLoad() {
         title = "Authum"
+        self.navigationController?.navigationBar.barStyle = .Black
     }
 
     @IBAction func logInButtonPressed(sender: UIButton) {
