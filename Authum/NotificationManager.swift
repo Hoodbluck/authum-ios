@@ -13,10 +13,10 @@ class NotificationManager {
     static let sharedInstance = NotificationManager()
     
     let kAcceptActionTitle = "Accept"
-    let kAcceptActionIdentifier = "AcceptActionId"
+    let kAcceptActionIdentifier = "ACCEPT_ACTION_ID"
     let kDeclineActionTitle = "Decline"
-    let kDeclineActionIdentifier = "DeclineActionId"
-    
+    let kDeclineActionIdentifier = "DECLINE_ACTION_ID"
+    let kCategoryIdentifier = "AUTHENTICATE_CATEGORY"
     
     func registerForPushNotifications() {
         UIApplication.sharedApplication().registerUserNotificationSettings(userNotificationSettings())
@@ -57,23 +57,38 @@ class NotificationManager {
         let acceptAction = UIMutableUserNotificationAction()
         acceptAction.title = kAcceptActionTitle
         acceptAction.identifier = kAcceptActionIdentifier
-        acceptAction.activationMode = .Background
+        acceptAction.activationMode = UIUserNotificationActivationMode.Background
         acceptAction.authenticationRequired = false
         
         let declineAction = UIMutableUserNotificationAction()
         declineAction.title = kDeclineActionTitle
         declineAction.identifier = kDeclineActionIdentifier
-        declineAction.activationMode = .Background
+        declineAction.activationMode = UIUserNotificationActivationMode.Background
         declineAction.authenticationRequired = false
         
         
         let category = UIMutableUserNotificationCategory()
-        category.identifier = kDeclineActionIdentifier
-        category.setActions([acceptAction,declineAction], forContext: .Default)
-        category.setActions([acceptAction,declineAction], forContext: .Minimal)
+        category.identifier = kCategoryIdentifier
+        category.setActions([acceptAction,declineAction], forContext: UIUserNotificationActionContext.Default)
+        category.setActions([acceptAction,declineAction], forContext: UIUserNotificationActionContext.Minimal)
         
         var categories = Set<UIUserNotificationCategory>()
         categories.insert(category)
-        return UIUserNotificationSettings(forTypes: [UIUserNotificationType.Alert, .Badge, .Sound], categories: categories)
+        return UIUserNotificationSettings(forTypes: [UIUserNotificationType.Alert, UIUserNotificationType.Badge], categories: categories)
+    }
+    
+    func handleNotificationAction(actionIdentifier: String?) {
+        
+        switch actionIdentifier {
+        
+        case .Some(kAcceptActionIdentifier):
+            // TODO: Implement Authum call
+            print("Accepted action")
+        case .Some(kDeclineActionIdentifier):
+            // TODO: Implement Authum call
+            print("Decline action")
+        default:
+            print("\(actionIdentifier) Not found")
+        }
     }
 }
