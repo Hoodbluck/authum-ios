@@ -35,6 +35,7 @@
 		B5AE469B1B5BC1ED0059FA87 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5AE46991B5BC1ED0059FA87 /* Interface.storyboard */; };
 		B5AE469D1B5BC1ED0059FA87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AE469C1B5BC1ED0059FA87 /* Assets.xcassets */; };
 		B5AE46A11B5BC1ED0059FA87 /* Authum WatchKit 1 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B5AE46871B5BC1ED0059FA87 /* Authum WatchKit 1 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B5AE46AA1B5BC4800059FA87 /* ThirdPartyAppRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE46A91B5BC4800059FA87 /* ThirdPartyAppRowController.swift */; };
 		B5D9C5E71B5AEC6C0000788F /* Parameterizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D9C5E61B5AEC6C0000788F /* Parameterizable.swift */; };
 		B5D9C5EA1B5B075F0000788F /* ResponseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D9C5E91B5B075F0000788F /* ResponseCode.swift */; };
 		B5D9C5EC1B5B0E260000788F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D9C5EB1B5B0E260000788F /* HomeViewController.swift */; };
@@ -146,6 +147,7 @@
 		B5AE469A1B5BC1ED0059FA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		B5AE469C1B5BC1ED0059FA87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5AE469E1B5BC1ED0059FA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5AE46A91B5BC4800059FA87 /* ThirdPartyAppRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdPartyAppRowController.swift; path = "../Authum WatchKit 1 App/ThirdPartyAppRowController.swift"; sourceTree = "<group>"; };
 		B5D9C5E61B5AEC6C0000788F /* Parameterizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameterizable.swift; sourceTree = "<group>"; };
 		B5D9C5E91B5B075F0000788F /* ResponseCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCode.swift; sourceTree = "<group>"; };
 		B5D9C5EB1B5B0E260000788F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 			children = (
 				B5AE468B1B5BC1ED0059FA87 /* InterfaceController.swift */,
 				B5AE468D1B5BC1ED0059FA87 /* NotificationController.swift */,
+				B5AE46A91B5BC4800059FA87 /* ThirdPartyAppRowController.swift */,
 				B5AE468F1B5BC1ED0059FA87 /* Assets.xcassets */,
 				B5AE46911B5BC1ED0059FA87 /* Info.plist */,
 				B5AE46891B5BC1ED0059FA87 /* Supporting Files */,
@@ -608,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5AE46AA1B5BC4800059FA87 /* ThirdPartyAppRowController.swift in Sources */,
 				B5AE468E1B5BC1ED0059FA87 /* NotificationController.swift in Sources */,
 				B5AE468C1B5BC1ED0059FA87 /* InterfaceController.swift in Sources */,
 			);
@@ -943,6 +947,7 @@
 				B5AE46A51B5BC1ED0059FA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5AE46A71B5BC1ED0059FA87 /* Build configuration list for PBXNativeTarget "Authum WatchKit 1 Extension" */ = {
 			isa = XCConfigurationList;
@@ -951,6 +956,7 @@
 				B5AE46A31B5BC1ED0059FA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
